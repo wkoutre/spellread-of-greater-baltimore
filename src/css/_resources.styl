@@ -19,7 +19,7 @@
 .symptoms
 	// border 1px solid white
 	flex 0 1 90%
-	height 35%
+	height 40%
 	display flex
 	flex-wrap wrap
 	justify-content space-between
@@ -38,6 +38,8 @@
 		overflow-y auto
 		flex 0 1 37.5%
 		display flex
+		height 100%
+		border 1px solid green
 		flex-direction column
 		& > h5
 			// align-self center
@@ -47,8 +49,6 @@
 			padding 5px
 			// text-decoration underline
 			// text-decoration-style dotted
-			
-
 		& ul
 			font-family $content
 			line-height 2.5vmin
@@ -56,6 +56,8 @@
 			align-self flex-start
 			font-size 1.75vmin
 			margin-top 4vmin
+			width 90%
+			align-self center
 		& li
 			padding 0.25vmin
 			&:hover
@@ -64,6 +66,7 @@
 
 .early-childhood
 	margin-left 20vw
+	overflow-y auto
 	
 .what-we-know
 	// border 1px solid $yellow

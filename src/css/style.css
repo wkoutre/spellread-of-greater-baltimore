@@ -224,10 +224,9 @@ html {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 30%;
             flex: 0 1 30%;
-    font-size: 3vmin;
+    font-size: 2.5vmin;
     text-align: right;
     margin-right: 3%;
-    font-size: 2.5vmin;
   }
 }
 @media (orientation: portrait) {
@@ -341,10 +340,9 @@ html {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 30%;
             flex: 0 1 30%;
-    font-size: 3vmin;
+    font-size: 2.5vmin;
     text-align: right;
     margin-right: 3%;
-    font-size: 2.5vmin;
   }
   .comment-box > textarea {
     -webkit-box-flex: 1;
@@ -906,7 +904,7 @@ html {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 90%;
           flex: 0 1 90%;
-  height: 35%;
+  height: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -940,6 +938,8 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
+  border: 1px solid #008000;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -959,6 +959,10 @@ html {
       align-self: flex-start;
   font-size: 1.75vmin;
   margin-top: 4vmin;
+  width: 90%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 .symptoms > div li {
   padding: 0.25vmin;
@@ -969,6 +973,7 @@ html {
 }
 .early-childhood {
   margin-left: 20vw;
+  overflow-y: auto;
 }
 .what-we-know {
   -webkit-box-flex: 0;
