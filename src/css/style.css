@@ -901,7 +901,6 @@ html {
   border-bottom: 1px dashed #f7882f;
 }
 .symptoms {
-  border: 1px solid #fff;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 90%;
           flex: 0 1 90%;
@@ -970,7 +969,6 @@ html {
   margin-left: 20vw;
 }
 .what-we-know {
-  border: 1px solid #f7c331;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 90%;
           flex: 0 1 90%;
