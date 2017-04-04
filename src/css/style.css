@@ -227,6 +227,7 @@ html {
     font-size: 3vmin;
     text-align: right;
     margin-right: 3%;
+    font-size: 2.5vmin;
   }
 }
 @media (orientation: portrait) {
@@ -343,6 +344,7 @@ html {
     font-size: 3vmin;
     text-align: right;
     margin-right: 3%;
+    font-size: 2.5vmin;
   }
   .comment-box > textarea {
     -webkit-box-flex: 1;
