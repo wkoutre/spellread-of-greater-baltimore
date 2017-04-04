@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="pattern-0" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse" viewBox="0 0 100 100">
+      <path d="M 0 0 L 50 0 L 50 100 L 0 100 Z" style="fill: black;"/>
+    </pattern>
+  </defs>
+  <g transform="matrix(8.523097, 0, 0, 8.650816, 94.578972, 132.645554)">
+    <polygon points="0.046 2.582 2.13 0.498 12.967 11.465 23.803 0.498 25.887 2.582 12.967 15.502" style="fill: rgb(70, 70, 70);"/>
+    <polygon points="0.046,13.582 2.13,11.498 12.967,22.334 23.803,11.498 25.887,13.582 12.967,26.502  " style="fill: rgb(70, 70, 70);"/>
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+2007 report: https://ies.ed.gov/ncee/wwc/EvidenceSnapshot/481
+2013 report: https://ies.ed.gov/ncee/wwc/Docs/InterventionReports/wwc_spellread_102116.pdf
+Evidence Spanshot: https://ies.ed.gov/ncee/wwc/EvidenceSnapshot/481
+WWC Info: https://ies.ed.gov/ncee/wwc/WhatWeDo
+Comprehension Source: http://www.readingdifficultysolutions.com/wp-content/uploads/2012/06/RDS-WWC1.pdf
+
+Sight Word Practice: https://www.youtube.com/watch?v=k6i8b46w2eU
+
+To-Do
+
+change header and footer for mobile sizes // ?? \\
+site-map
+contact page
+	-- picture of Aunt Joanie ... and the rest of the team...?
+submit a success story (!!!)

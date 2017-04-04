@@ -1,0 +1,54 @@
+.header
+	background-color $white
+	position fixed
+	padding 10px 0
+	top 0
+	width 100%
+	left 0
+	// &::after
+	// 	content ""
+	// 	position fixed
+	// 	top 2
+	// 	border 8px double $white
+	// 	width 100%
+
+.nav-wrapper ul
+	// border 1px solid red
+	// noStyle()
+	display flex
+	justify-content space-around
+	align-items center
+	margin 0
+	padding 0
+	height 100%
+	// position fixed
+		
+	/* header links */
+	& li
+		font-family $heading
+		transition all 0.3s
+		font-size 2vmin
+		// border 2px solid green
+		height 4vmin
+		display flex
+		align-items center
+		justify-content space-between
+		flex 0 calc(100%/7)
+		padding 1vmin
+		// height 100%
+		&:hover
+			background-color $light-purple
+			font-weight bold
+		& a
+			font-family $content
+			text-decoration none
+			display flex
+			flex 0 1 100%
+			justify-content center
+			text-align center
+			color $blue			
+			& img
+				height 5vmin
+
+.header-logo
+	height 5%

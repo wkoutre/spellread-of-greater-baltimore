@@ -1,0 +1,34 @@
+link-hover =
+	color $orange
+	cursor pointer
+	
+link-style =
+	color $link-color
+	font-family $content
+	text-decoration none
+	&:hover
+		color $orange
+		cursor pointer
+
+.not-found
+	position fixed
+	overflow hidden
+	font-family $content
+	display flex
+	flex-direction column
+	flex 0 1 100%
+	align-items center
+	text-align center
+	color $white
+	top 20vh
+	left 0
+	right 0
+	margin 0 auto
+	& > h1
+		margin-bottom 20px
+	&-back
+		color $link-color
+		&:hover
+			link-hover()
+	& a
+		{$link-style}

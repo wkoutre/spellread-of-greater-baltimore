@@ -1,0 +1,91 @@
+.resources-wrapper
+	flex-wrap wrap
+	align-items center
+	& blockquote
+		font-size 3vmin
+		flex 0 1 90%
+		// align-self flex-start
+		display flex
+		justify-content space-between
+		align-items center
+		& span
+			flex 0 1 80%
+		& a
+			flex 0 1 10%
+			{$link-style}
+			// color $light-purple
+			// align-self center
+			
+.symptoms
+	border 1px solid white
+	flex 0 1 90%
+	height 35%
+	display flex
+	flex-wrap wrap
+	justify-content space-between
+	& > h4
+		position absolute
+		width 10%
+		// flex 0 1 10%
+		// align-self flex-start
+		color $white
+		align-self center
+		& span
+			color $dark-purple
+		@media (orientation: landscape)
+			margin-left 5vw
+	& > div
+		overflow-y auto
+		flex 0 1 37.5%
+		display flex
+		flex-direction column
+		& > h5
+			// align-self center
+			width 100%
+			position absolute
+			background-color $blue
+			padding 5px
+			// text-decoration underline
+			// text-decoration-style dotted
+			
+
+		& ul
+			font-family $content
+			line-height 2.5vmin
+			color $light-purple
+			align-self flex-start
+			font-size 1.75vmin
+			margin-top 4vmin
+		& li
+			padding 0.25vmin
+			&:hover
+				background-color $white
+				color $dark-purple
+
+.early-childhood
+	margin-left 20vw
+	
+.what-we-know
+	border 1px solid $yellow
+	flex 0 1 90%
+	overflow-y auto
+	height 35%
+	display flex
+	flex-wrap wrap
+	justify-content space-between
+	& > h4
+		position absolute
+		width 10%
+		@media (orientation: landscape)
+			margin-left 5vw
+		// align-self flex-start
+		color $white
+		align-self center
+		& span
+			color $dark-purple
+	& > p
+		flex 0 1 90%
+		// text-align right
+		margin-left 20vw
+		
+			
