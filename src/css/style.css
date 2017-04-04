@@ -580,7 +580,6 @@ html {
   padding: 1vmin;
 }
 .nav-wrapper ul li:hover {
-  background-color: #dedcea;
   font-weight: bold;
 }
 .nav-wrapper ul li a {
@@ -939,7 +938,6 @@ html {
   display: -ms-flexbox;
   display: flex;
   height: 100%;
-  border: 1px solid #008000;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1342,6 +1340,7 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
 }
 button:hover,
 button:active {
