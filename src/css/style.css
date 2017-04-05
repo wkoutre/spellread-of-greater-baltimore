@@ -155,7 +155,7 @@
   border-radius: 2px;
   box-shadow: -0.25rem 0.5rem 0.5rem #343435;
   border: 5px solid #f7f6f2;
-  font-size: 2rem;
+  font-size: 1rem;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   outline: 0;
@@ -378,8 +378,6 @@
 }
 .nav-wrapper ul li {
   font-family: Lora;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
   font-size: 2vmin;
   height: 4vmin;
   display: -webkit-box;
@@ -448,10 +446,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-flex: 0;
@@ -486,7 +484,7 @@
       justify-content: space-around;
   height: 60%;
   font-style: italic;
-  font-size: 3.5rem;
+  font-size: 2.25rem;
   color: #f7f6f2;
 }
 .landing > blockquote > cite > a {
@@ -496,7 +494,7 @@
   font-family: Cormorant;
   text-decoration: none;
   border-bottom: 1px dashed #dedcea;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 .landing > blockquote > cite > a:hover {
   color: #f7c331;
@@ -522,7 +520,9 @@
   color: #28276d;
 }
 .continue {
-  font-size: 4.5rem;
+  font-size: 3rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 .not-found {
   position: fixed;
@@ -591,7 +591,7 @@
   border-radius: 2px;
   box-shadow: -0.25rem 0.5rem 0.5rem #343435;
   border: 5px solid #f7f6f2;
-  font-size: 2rem;
+  font-size: 1rem;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   outline: 0;
@@ -673,8 +673,8 @@
   max-height: 90%;
 }
 .research-content > div div blockquote {
-  font-size: 3.5rem;
-  padding: 3.5rem;
+  font-size: 2rem;
+  padding: 2rem;
   font-family: Cormorant;
   text-align: justify;
 }
@@ -695,7 +695,7 @@
 .research-content > div > img {
   border-radius: 5px;
   border: 2px solid #28276d;
-  max-width: 100%;
+  max-width: 95%;
   max-height: 95%;
   box-shadow: -0.5rem 0.5rem 1rem #28276d;
 }
@@ -730,7 +730,7 @@
       align-self: flex-start;
 }
 .resources-wrapper blockquote > span {
-  font-size: 2.5rem;
+  font-size: 1.3rem;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 80%;
           flex: 0 1 80%;
@@ -745,8 +745,7 @@
   font-family: Cormorant;
   text-decoration: none;
   border-bottom: 1px dashed #343435;
-  font-size: 3rem;
-  margin-left: 5rem;
+  font-size: 2rem;
 }
 .resources-wrapper blockquote a:hover {
   color: #f7882f;
@@ -774,10 +773,9 @@
 }
 .symptoms > h4,
 .what-we-know > h4 {
-  -webkit-box-flex: 0.5;
-      -ms-flex: 0.5 1 10%;
-          flex: 0.5 1 10%;
-  color: #f7f6f2;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 15%;
+          flex: 0 1 15%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -788,9 +786,6 @@
 }
 .symptoms > div,
 .what-we-know > div {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 42.5%;
-          flex: 0 1 42.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -798,7 +793,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 40%;
+          flex: 0 1 40%;
   height: 100%;
+  border: 1px solid #008000;
 }
 .symptoms > div > h5,
 .what-we-know > div > h5 {
@@ -819,15 +818,16 @@
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  height: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   font-family: Cormorant;
-  line-height: 2.5rem;
+  line-height: 1.25rem;
   color: #dedcea;
   -ms-flex-item-align: start;
       align-self: flex-start;
-  font-size: 1.75rem;
+  font-size: 1rem;
   overflow-y: auto;
   -ms-flex-item-align: center;
       align-self: center;
@@ -883,7 +883,7 @@
   border-radius: 2px;
   box-shadow: -0.25rem 0.5rem 0.5rem #343435;
   border: 5px solid #f7f6f2;
-  font-size: 2rem;
+  font-size: 1rem;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   outline: 0;
@@ -1110,7 +1110,7 @@
   border-radius: 2px;
   box-shadow: -0.25rem 0.5rem 0.5rem #343435;
   border: 5px solid #f7f6f2;
-  font-size: 2rem;
+  font-size: 1rem;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   outline: 0;
@@ -1174,35 +1174,38 @@
   background: #343435;
   -webkit-border-radius: 0;
 }
+html {
+  font-size: 2vmin;
+}
 h1 {
   color: #fff;
   font-family: Lora;
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 h2 {
   color: #fff;
   font-family: Lora;
-  font-size: 3.2rem;
+  font-size: 2.5rem;
 }
 h3 {
   color: #fff;
   font-family: Lora;
-  font-size: 2.9rem;
+  font-size: 2rem;
 }
 h4 {
   color: #fff;
   font-family: Lora;
-  font-size: 2.6rem;
+  font-size: 1.65rem;
 }
 h5 {
   color: #fff;
   font-family: Lora;
-  font-size: 2.3rem;
+  font-size: 1.35rem;
 }
 p {
   font-family: Cormorant;
-  font-size: 2rem;
-  line-height: 2.5rem;
+  font-size: 1rem;
+  line-height: 1.75rem;
   color: #dedcea;
 }
 ul {

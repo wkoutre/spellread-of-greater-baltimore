@@ -40,7 +40,7 @@ class Landing extends React.Component {
 						</a>
 					</cite>
 				</blockquote>
-				<hr/>
+				
 				<Link to="/why-spellread-works"><span className="continue">Continue</span></Link>
 			</div>
             )
