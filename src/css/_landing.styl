@@ -7,47 +7,52 @@
 // 	// font-size 2rem
 	
 .landing
-	display flex
-	flex-direction column
+	{$flex-col-wrap}
 	flex 0 1 75%
+	height 80%
 	align-items center
-	justify-content center
-	flex-wrap wrap
+	justify-content space-around
 	text-align center
 	& hr
 		width 80%
 		// height 2px
-		margin 5vmin 0
 		// background $white
 		// background-color $white
-		border 1px solid $white
+		border-bottom 1px dotted $white
 		
 	& > blockquote
-		display flex
-		flex-direction column
+		{$flex-row-wrap}
 		align-items center
 		justify-content space-around
+		height 60%
 		font-style italic
-		font-size 5vmin
+		font-size 3.5rem
 		color $white
-		& a
-			flex 0 1 10%
-			transition all 0.3s
-			color $light-yellow
-			font-family $content
-			text-decoration none
-			border-bottom 1px dashed $light-purple
-			font-size 3vmin
-			&:hover
-				color $yellow
-				cursor pointer
-				border-bottom 1px dashed $dark-purple
+		// border 1px solid white
+		& > cite
+			& > a
+				transition all 0.3s
+				color $light-yellow
+				font-family $content
+				text-decoration none
+				border-bottom 1px dashed $light-purple
+				font-size 2.5rem
+				&:hover
+					color $yellow
+					cursor pointer
+					border-bottom 1px dashed $dark-purple
 		& > span
-			flex 0 1 60%
+			flex 0 1 100%
 			width 100%
 	& > a
-		{$link-style}
 		color $white
+		text-decoration none
+		font-family $content
+		border-bottom 1px dashed $dark-purple
+		transition all 0.3s
+		&:hover
+			border-bottom 1px dashed $white
+			color $dark-purple
 
 .continue
-	font-size 4.5vmin
+	font-size 4.5rem

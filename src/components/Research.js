@@ -38,12 +38,6 @@ class Research extends React.Component {
     	)
     }
 
-  buttonContentHandler = () => {
-    const buttonContent = this.state.buttons[this.state.current];
-
-    return buttonContent;
-  }
-
   render() {
 
     return (
@@ -60,7 +54,7 @@ class Research extends React.Component {
                 <button 
                 className="next-btn"
                 onClick={this.handleClick}>
-                  {this.buttonContentHandler()}
+                  <span>{this.state.buttons[this.state.current]}</span>
                 </button>
               </div>
         </CSSTransitionGroup>

@@ -16,14 +16,21 @@ class SuccessStories extends React.Component {
 
 	componentDidMount() {
 		const names = Object.keys(successes);
-		const stories = Object.values(successes);
-		// console.log(names);
 
+		/*
+			ONLY CHROME AND FIREFOX SUPPORT OBJECT.VALUES
+			const stories = Object.values(successes);
+		*/
+
+		const stories = names.reduce( (arr, cur) => {
+			return arr.concat(successes[cur]);
+		}, []);
+		
 		this.setState({
 			count: Object.keys(successes).length,
 			current: 3,
-			names: Object.keys(successes),
-			stories: Object.values(successes),
+			names: names,
+			stories: stories,
 			currentNames: names.slice(0, 4),
 			currentStories: stories.slice(0, 4)
 		})
@@ -52,31 +59,23 @@ class SuccessStories extends React.Component {
 		})
 	}
 
-	displayStories = () => {
+	render() {
 
-		let localStories = this.state.currentStories.map( (s, i) => {
+		let mappedStories = this.state.currentStories.map( (s, i) => {
 			return (
-					<div key={s} className="story-container">
-						<h2>{this.state.currentNames[i]}</h2>
-						<p>{s}</p>
-					</div>
-					)
+				<div key={s} className="story-container">
+					<h2>{this.state.currentNames[i]}</h2>
+					<p>{s}</p>
+				</div>
+			)
 		});
 
 		return (
-			<div className="success-content">
-				{localStories}
-			</div>
-		)
-	}
-
-	render() {
-		// console.log(this.displayStories());
-
-		return (
 			<div className="page-wrapper research-wrapper">
-			{this.displayStories()}
-			<button onClick={() => this.changeStories()}><span>More Stories</span></button>
+				<div className="success-content">
+					{mappedStories}
+				</div>
+				<button onClick={() => this.changeStories()}><span>More Stories</span></button>
 			</div>
 		)
 	}

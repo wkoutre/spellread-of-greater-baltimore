@@ -11,64 +11,10 @@ $dark-purple = #28276D
 $light-purple = #DEDCEA
 $yellow-opacity = rgba(247, 195, 49, 0.5)
 
-$clear =
-	background: none;
-	border: 0;
-	clear: both;
-	display: block;
-	float: none;
-	font-size: 0;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	visibility: hidden;
-	width: 0;
-	height: 0;
-
-$heading-style =
-	color white
-	font-family $heading
-
-html
-	max-height vmin
-	max-width vmin
-
-$button-style = 
-	font-family $content
-	// height 3vmin
-	background-color $white
-	color $blue
-	border-radius 2px
-	box-shadow -0.25vmin 0.5vmin 0.5vmin $link-color
-	border 5px solid $white
-	font-size 3vmin
-	transition all 0.3s
-	outline 0
-	display flex
-	align-items center
-	justify-content center
-	&:hover, &:active
-		cursor pointer
-		opacity 0.9
-		box-shadow -0.175vmin 0.375vmin 0.375vmin $link-color
-	&:active
-		transform: translateY(2px)
-		box-shadow -0.125vmin 0.25vmin 0.25vmin $link-color
-
-$link-style =
-	color $link-color
-	transition all 0.3s
-	font-family $content
-	text-decoration none
-	border-bottom 1px dashed $link-color
-	&:hover
-		color $orange
-		cursor pointer
-		border-bottom 1px dashed $orange
-
 @import url('https://fonts.googleapis.com/css?family=Cormorant|Lora');
 
 // Import all partials
+@require './_variables.styl'
 @require './_*.styl'
 // Import Cormorant font from Google Font API
 
@@ -92,30 +38,34 @@ flex-row-all-center =
 	background $link-color
 	-webkit-border-radius 0
 	
+// html
+// 	background-color $blue
+// 	max-width 100vw
+
 h1
 	{$heading-style}
-	font-size 5.5vmin
+	font-size 3.5rem
 
 h2
 	{$heading-style}	
-	font-size 4.8vmin
+	font-size 3.2rem
 	
 h3
 	{$heading-style}
-	font-size 4.3vmin
+	font-size 2.9rem
 
 h4
 	{$heading-style}
-	font-size 3.5vmin
+	font-size 2.6rem
 
 h5
 	{$heading-style}
-	font-size 2.5vmin
+	font-size 2.3rem
 	
 p
 	font-family $content
-	font-size 2vmin
-	line-height 3vmin
+	font-size 2rem
+	line-height 2.5rem
 	color $light-purple
 	
 ul
@@ -171,9 +121,10 @@ button
 
 .page-wrapper
 	// border 5px solid green
+	flex 1 1 100%
 	height 75%
 	display flex
-	flex 1 1 100%
 	justify-content center
 	align-items center
 	overflow-y auto
+	background-color $blue

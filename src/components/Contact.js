@@ -44,11 +44,12 @@ class Contact extends React.Component {
 						id="" 
 						cols="30" 
 						rows="10" 
+						maxLength="500"
 						placeholder="Enter your comments here"></textarea></div>
-					<input 
-						type="submit" 
-						value="Submit" 
-						maxLength="500"/>
+					<button
+						type="submit">
+						<span>Submit</span>
+					</button>
 				</form>
 			</div>
 		)

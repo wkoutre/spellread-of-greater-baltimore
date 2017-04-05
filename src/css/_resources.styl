@@ -1,94 +1,74 @@
 .resources-wrapper
 	flex-wrap wrap
-	align-items center
+	align-items space-around
 	& blockquote
-		font-size 3vmin
 		flex 0 1 90%
 		// align-self flex-start
 		display flex
 		justify-content space-between
 		align-items center
-		& span
+		align-self flex-start
+		& > span
+			font-size 2.5rem
 			flex 0 1 80%
 		& a
 			flex 0 1 10%
 			{$link-style}
-			// color $light-purple
-			// align-self center
+			font-size 3rem
+			margin-left 5rem
 			
-.symptoms
+.symptoms, .what-we-know
 	// border 1px solid white
+	{$flex-row-wrap}
 	flex 0 1 90%
-	height 40%
-	display flex
-	flex-wrap wrap
+	height 37.5%
 	justify-content space-between
 	& > h4
-		position absolute
-		width 10%
-		// flex 0 1 10%
+		flex 0.5 1 10%
 		// align-self flex-start
 		color $white
 		align-self center
 		& span
 			color $dark-purple
-		@media (orientation: landscape)
-			margin-left 5vw
+		// margin-left 5rem
 	& > div
-		overflow-y auto
-		flex 0 1 37.5%
+		flex 0 1 42.5%
 		display flex
+		flex-direction column
 		height 100%
 		// border 1px solid green
-		flex-direction column
+		
 		& > h5
-			// align-self center
-			width 100%
-			position absolute
+			align-self center
+			// flex 1 1 100%
 			background-color $blue
 			padding 5px
+			// border 1px solid white
 			// text-decoration underline
 			// text-decoration-style dotted
 		& ul
+			{$flex-row-wrap}
+			justify-content center
 			font-family $content
-			line-height 2.5vmin
+			line-height 2.5rem
 			color $light-purple
 			align-self flex-start
-			font-size 1.75vmin
-			margin-top 4vmin
-			width 90%
+			font-size 1.75rem
+			overflow-y auto
 			align-self center
+			// width 95%
 		& li
-			padding 0.25vmin
+			padding 0.2rem
+			flex 0 1 95%
 			&:hover
 				background-color $white
 				color $dark-purple
-
-.early-childhood
-	margin-left 20vw
-	overflow-y auto
 	
 .what-we-know
-	// border 1px solid $yellow
-	flex 0 1 90%
-	overflow-y auto
-	height 35%
-	display flex
-	flex-wrap wrap
-	justify-content space-between
-	& > h4
-		position absolute
-		width 10%
-		@media (orientation: landscape)
-			margin-left 5vw
-		// align-self flex-start
-		color $white
-		align-self center
-		& span
-			color $dark-purple
-	& > p
-		flex 0 1 90%
-		// text-align right
-		margin-left 20vw
-		
-			
+	& p
+		overflow-y auto
+		{$flex-row-wrap}
+		justify-content center
+		text-align justify
+		& > span
+			flex 0 1 95%

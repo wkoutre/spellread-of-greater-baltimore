@@ -74,9 +74,9 @@ class WhySpellReadWorks extends React.Component {
   render() {
 
     const nextButton = <button 
-                className="btn-why-sr-works bottom-item"
+                className="btn-why-sr-works"
                 onClick={this.handleClick}>
-                  {`Next: ${this.state.buttonContent}`}
+                  <span>{`Next: ${this.state.buttonContent}`}</span>
                 </button>
 
       const exploreSite = <p className="bottom-text bottom-item">For more information, please click around the site, explore the resources linked at the bottom, and get in touch!</p>
@@ -94,7 +94,7 @@ class WhySpellReadWorks extends React.Component {
                 {this.state.totalSlides}
             {this.state.current < this.state.headers.length ?
               nextButton :
-              exploreSite}
+              nextButton}
               </div>
         </CSSTransitionGroup>
     )

@@ -61,19 +61,18 @@ export const symptoms = (
 					</div>
 				</div>)
 
-const whatWeKnowText = <p>Dyslexia is a specific learning disability that is neurological in origin. It is characterized by difficulties with accurate and/or fluent word recognition and by poor spelling and decoding abilities. These difficulties typically result from a deficit in the phonological component of language. For decades, dyslexics have had to tolerate the challenges of dyslexia on daily levels, without hope that the neurological disorder could be overcome. However, with more research on how the brain functions with and without dyslexia, findings are showing that the tide is changing for those suffering with dyslexia.
-<br/>
-<br/>
+const whatWeKnowText = <p><span>Dyslexia is a specific learning disability that is neurological in origin. It is characterized by difficulties with accurate and/or fluent word recognition and by poor spelling and decoding abilities. These difficulties typically result from a deficit in the phonological component of language. For decades, dyslexics have had to tolerate the challenges of dyslexia on daily levels, without hope that the neurological disorder could be overcome. However, with more research on how the brain functions with and without dyslexia, findings are showing that the tide is changing for those suffering with dyslexia.</span></p>
 
-An article published by <MyLink
+const TimeArticleText = <p><span>An article published by <MyLink
 		link="http://www.marklemessurier.com.au/main/workshops/teacher/articles/The%20Time%20Magazine%20The%20New%20Science%20of%20Dyslexia.pdf"
 		text="TIME Magazine"/> stated that, <em>"...people with dyslexia are not brain damaged. Brain scans show their cerebrums are perfectly normal, if not extraordinary. Dyslexics, in fact, seem to have a distinct advantage when it comes to thinking outside the box. But a growing body of scientific evidence suggests that there is a glitch in the neurological wiring of dyslexics that makes the reading extremely difficult for them. Fortunately, the science also points to new strategies for overcoming the glitch. The most successful programs focus on strengthening the brain's aptitude for linking letters to the sounds they represent."</em>&nbsp;&nbsp;
 		<MyLink 
 			link="http://www.marklemessurier.com.au/main/workshops/teacher/articles/The%20Time%20Magazine%20The%20New%20Science%20of%20Dyslexia.pdf"
-			text="Read more."/></p>
+			text="Read more."/></span></p>
 
 export const whatWeKnow = (
 				<div className="what-we-know">
 				<h4>What We <span>Know Now</span></h4>
-					{whatWeKnowText}
+					<div>{whatWeKnowText}</div>
+					<div>{TimeArticleText}</div>
 				</div>)
