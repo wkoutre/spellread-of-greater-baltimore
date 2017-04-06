@@ -720,7 +720,7 @@
           flex-direction: column;
 }
 .research-content > div div blockquote {
-  width: 75%;
+  width: 85%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -1345,8 +1345,18 @@ button:active {
 }
 .show {
   opacity: 1;
+  touch-callout: text;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
 }
 .hide {
+  touch-callout: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   opacity: 0;
 }
 .active {
