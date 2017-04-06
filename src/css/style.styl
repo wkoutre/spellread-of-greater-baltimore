@@ -32,7 +32,6 @@ flex-row-all-center =
 	padding 0
 	
 ::-webkit-scrollbar
-	width 2vmin
 	background-color $white
 ::-webkit-scrollbar-thumb
 	background $link-color
@@ -91,6 +90,7 @@ button
 	align-items center
 	justify-content center
 	text-align center
+	height 5vmin
 	&:hover, &:active
 		cursor pointer
 		opacity 0.9
@@ -98,6 +98,12 @@ button
 	&:active
 		transform: translateY(2px)
 		box-shadow -0.125vmin 0.25vmin 0.25vmin $link-color
+		
+.show
+	opacity 1
+	
+.hide
+	opacity 0
 
 .active
 	border-bottom 1px dashed $dark-purple
@@ -121,7 +127,7 @@ button
 .page-wrapper
 	// border 5px solid green
 	flex 1 1 100%
-	height 75%
+	height 80%
 	display flex
 	justify-content center
 	align-items center

@@ -17,7 +17,7 @@ const linkMaker = (sectionTitle) => {
 
 	return (
 		<div className="footer-section" key={`footer-item-${sectionTitle}`}>
-			<h4 className={'footer-title'}>{sectionTitle}</h4>
+			{sectionTitle !== "" && <h4 className={'footer-title'}>{sectionTitle}</h4>}
 			{items.map(i => {
 				const id = typeof i === 'string' ? i.split(' ')[0] : i;
 

@@ -22,23 +22,18 @@ class Research extends React.Component {
     });
   }
 
-  contentHandler = () => {
-    const content = this.state.content[this.state.current];
-    const contentType = content[0];
-    const dataToRender = content[1];
-    const header = this.state.headers[this.state.current]
-
-    return (
-    	<div className="research-content" key={contentType}>
-    		<h1>{header}</h1>
-    		<div>
-    			{dataToRender}
-    		</div>
-    	</div>
-    	)
-    }
-
   render() {
+    const contentToRender = (
+
+      <div
+        className="research-content"
+        key={this.state.content[this.state.current][0]}>
+        <h2>{this.state.headers[this.state.current]}</h2>
+        <div>
+          {this.state.content[this.state.current][1]}
+        </div>
+      </div>
+    )
 
     return (
           <CSSTransitionGroup
@@ -50,7 +45,7 @@ class Research extends React.Component {
           transitionLeaveTimeout={500}
           className="page-wrapper research-wrapper">
             <div className="research">
-                {this.contentHandler()}
+                {contentToRender}
                 <button 
                 className="next-btn"
                 onClick={this.handleClick}>

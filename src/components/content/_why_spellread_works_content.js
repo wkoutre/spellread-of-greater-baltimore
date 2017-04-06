@@ -12,4 +12,4 @@ const item6 = 'Each class includes authentic, language-rich reading from leveled
 
 export const dataArray = [item1, item2, soundCycle, item4, threePhaseCycle, item6];
 export const headerArray = ['Dyslexia', 'Learning With Dyslexia', 'Elements of Reading Instruction ', 'Sessions', 'The 3 Phase Cycle', 'Classes'];
-export const buttonArray = ['What Does This Mean?', 'Elements of Reading Instruction', 'Session Information', 'The Three-Phase Cycle', 'Class Information', 'Learning to Read With Dyslexia'];
+export const buttonArray = ['What Does This Mean?', 'Elements of Reading Instruction', 'Session Information', 'The Three-Phase Cycle', 'Class Information'];

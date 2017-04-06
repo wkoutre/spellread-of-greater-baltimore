@@ -8,7 +8,7 @@ export const timeQuote = <blockquote
 				cite="http://content.time.com/time/world/article/0,8599,2047912,00.html">
 				<MyLink
 					link="http://content.time.com/time/world/article/0,8599,2047912,00.html"
-					text="TIME Magazine"/>
+					text={<span>TIME<br/>Magazine</span>}/>
 				<span>{quote}</span>
 				</blockquote>
 
@@ -65,7 +65,7 @@ const whatWeKnowText = <p><span>Dyslexia is a specific learning disability that 
 
 const TimeArticleText = <p><span>An article published by <MyLink
 		link="http://www.marklemessurier.com.au/main/workshops/teacher/articles/The%20Time%20Magazine%20The%20New%20Science%20of%20Dyslexia.pdf"
-		text="TIME Magazine"/> stated that, <em>"...people with dyslexia are not brain damaged. Brain scans show their cerebrums are perfectly normal, if not extraordinary. Dyslexics, in fact, seem to have a distinct advantage when it comes to thinking outside the box. But a growing body of scientific evidence suggests that there is a glitch in the neurological wiring of dyslexics that makes the reading extremely difficult for them. Fortunately, the science also points to new strategies for overcoming the glitch. The most successful programs focus on strengthening the brain's aptitude for linking letters to the sounds they represent."</em>&nbsp;&nbsp;
+		text="TIME Magazine"/> stated: <em>"...people with dyslexia are not brain damaged. Brain scans show their cerebrums are perfectly normal, if not extraordinary. Dyslexics, in fact, seem to have a distinct advantage when it comes to thinking outside the box. But a growing body of scientific evidence suggests that there is a glitch in the neurological wiring of dyslexics that makes the reading extremely difficult for them. Fortunately, the science also points to new strategies for overcoming the glitch. The most successful programs focus on strengthening the brain's aptitude for linking letters to the sounds they represent."</em>&nbsp;&nbsp;
 		<MyLink 
 			link="http://www.marklemessurier.com.au/main/workshops/teacher/articles/The%20Time%20Magazine%20The%20New%20Science%20of%20Dyslexia.pdf"
 			text="Read more."/></span></p>

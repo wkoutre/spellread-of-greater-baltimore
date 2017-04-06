@@ -27,9 +27,6 @@
 		flex 0 calc(100%/7)
 		padding 1vmin
 		// height 100%
-		&:hover
-			// background-color $light-purple
-			font-weight bold
 		& a
 			font-family $content
 			text-decoration none
@@ -37,7 +34,10 @@
 			flex 0 1 100%
 			justify-content center
 			text-align center
-			color $blue			
+			color $blue
+			// transition all 1s
+			&:hover
+				font-weight bold
 			& img
 				height 5vmin
 

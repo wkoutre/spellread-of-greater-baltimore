@@ -12,30 +12,40 @@
 			font-size 1.3rem
 			flex 0 1 80%
 		& a
-			flex 0 1 10%
-			{$link-style}
+			flex 0 1 15vw
+			{$flex-row}
+			cursor default
+			justify-content flex-end
 			font-size 2rem
+			text-decoration none
+			& > *
+				// border 1px solid red
+				{$link-style}
+				text-align right
+				border none
+			// text-align right
 			// margin-left 5rem
 			
 .symptoms, .what-we-know
 	// border 1px solid white
 	{$flex-row-wrap}
 	flex 0 1 90%
-	height 37.5%
+	height 40%
 	justify-content space-between
 	& > h4
-		flex 0 1 15%
+		flex 0 1 15vw
 		// align-self flex-start
 		align-self center
+		text-align right
 		& span
 			color $dark-purple
 		// border 1px solid gold
 		// margin-left 5rem
 	& > div
 		{$flex-col}
-		flex 0 1 40%
+		flex 0 1 36vw
 		height 100%
-		border 1px solid green
+		// border 1px solid green
 		
 		& > h5
 			align-self center
@@ -45,7 +55,7 @@
 			// border 1px solid white
 			// text-decoration underline
 			// text-decoration-style dotted
-		& ul
+		& > ul
 			{$flex-row-wrap}
 			height 100%
 			justify-content center
@@ -60,9 +70,17 @@
 		& li
 			padding 0.2rem
 			flex 0 1 95%
-			&:hover
-				background-color $white
-				color $dark-purple
+			&:nth-child(odd)
+				background-color $light-purple
+				color $blue
+			&:nth-child(even)
+				background-color $blue
+				color $light-purple
+			// &:hover
+			// 	background-color $white
+			// 	color $dark-purple
+		& a
+			{$link-style}
 	
 .what-we-know
 	& p

@@ -10,17 +10,17 @@
 	{$link-style}
 
 .footer
+	{$flex-row-wrap}
 	position fixed
 	width 100vw
 	padding 1vmin 0
 	bottom 0
 	left 0
 	background-color $white
-	display flex
 	font-size 8vmin
 	justify-content space-around
 	& > div
-		display flex
+		{$flex-row-wrap}
 		justify-content space-between
 		font-size 20%
 		// flex-wrap wrap
@@ -32,10 +32,9 @@
 		
 .footer-section
 	// border 2px solid blue
-	display flex
-	flex-wrap wrap
+	{$flex-row-wrap}
 	height 100%
-	flex 0 1 20%
+	flex 1 1 15%
 	justify-content space-between
 	// align-items center
 	// justify-content center
@@ -52,10 +51,9 @@
 
 .nav-links
 	// border 1px solid blue
+	{$flex-row-wrap}
 	flex 5 5 20%
 	height 100%
-	display flex
-	flex-wrap wrap
 	justify-content center
 	align-items center
 	// border 1px solid blue
@@ -80,5 +78,9 @@
 	flex 1 1 100%
 	// &-section
 		
-// #Copyright
-// 	font-size 1.5vmin
+#Copyright
+	height 6vmin
+	align-self center
+	display flex
+	align-items center
+	justify-content center

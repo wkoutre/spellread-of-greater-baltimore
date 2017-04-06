@@ -10,73 +10,55 @@ class WhySpellReadWorks extends React.Component {
   constructor() {
     super();
     this.state = {
-      current: 0,
-      texts: dataArray,
-      headers: headerArray,
-      buttons: buttonArray,
-      buttonContent: "",
+      current: 1,
       totalSlides: []
     }
   }
 
   componentDidMount() {
-    this.handleClick();
-  }
-
-  handleClick = () => {
-    // console.log('handling click');
-    let localCurrent = this.state.current;
-    // localCurrent = localCurrent === this.state.texts.length - 1 ? 0 : localCurrent + 1;
-    localCurrent += 1;
+    let slides = [];
+    for (let i = 0; i < 6; i++){
+      const show = i === 0 ? "why-sr-works-content show" : "why-sr-works-content hide";
+      const content = dataArray[i];
+      const match = content.match(/(png)|(svg)/);   
+      const header = headerArray[i];
+      const dataToRender = match ? <img src={content} alt={content}/> :  <p>{content}</p>;
+      const div = (
+            <div
+              key={content}
+              className={show}
+              id={`why-sr-works-${i}`}>
+              <div>
+                <h5>{header}</h5>
+                {dataToRender}
+              </div>
+          </div>
+        )
+      slides.push(div);
+    }
 
     this.setState({
-      current: localCurrent
-    });
-
-    this.contentHandler();
+      totalSlides: slides
+    })
   }
 
   contentHandler = () => {
-    const content = this.state.texts[this.state.current];
-    const match = content.match(/(png)|(svg)/);   
-    const header = this.state.headers[this.state.current]
-    const dataToRender = match ? <img src={content} alt={content}/> :  <p>{content}</p>;
-
     /* update this with PNGs... or learn how to use SVG */
+    const localCurrent = this.state.current + 1;
+    let element = document.getElementById(`why-sr-works-${this.state.current}`);
+    element.className += "show";
 
-      let newTotalSlides = [...this.state.totalSlides];
-      let newButtonContent = this.state.buttons[this.state.current];
-
-      newTotalSlides.push(
-             <div
-          key={content}
-          className="why-sr-works-content">
-          <div>
-              <h5>{header}</h5>
-              {dataToRender}
-          </div>
-            
-          </div>
-      )
-
-      this.setState({
-          totalSlides: newTotalSlides,
-          buttonContent: newButtonContent
+    this.setState({
+          current: localCurrent
       })
     }
-
-  // buttonContentHandler = () => {
-  //   const buttonContent = this.state.buttons[this.state.current];
-
-  //   return `Next: ${buttonContent}`;
-  // }
 
   render() {
 
     const nextButton = <button 
                 className="btn-why-sr-works"
-                onClick={this.handleClick}>
-                  <span>{`Next: ${this.state.buttonContent}`}</span>
+                onClick={this.contentHandler}>
+                  <span>{`Next: ${buttonArray[this.state.current-1]}`}</span>
                 </button>
 
       const exploreSite = <p className="bottom-text bottom-item">For more information, please click around the site, explore the resources linked at the bottom, and get in touch!</p>
@@ -92,9 +74,9 @@ class WhySpellReadWorks extends React.Component {
           className="page-wrapper why-spellread-works-wrapper">
             <div className="why-spellread-works">
                 {this.state.totalSlides}
-            {this.state.current < this.state.headers.length ?
+            {this.state.current < headerArray.length ?
               nextButton :
-              nextButton}
+              exploreSite}
               </div>
         </CSSTransitionGroup>
     )
