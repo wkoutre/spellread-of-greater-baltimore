@@ -81,3 +81,17 @@ $select-off =
 $select-on =
 	touch-callout text
 	user-select text
+
+$p-style =
+	font-family $content
+	font-size 1rem
+	line-height 1.75rem
+	color $light-purple
+
+$list-color-alternate =
+	&:nth-child(odd)
+		background-color $light-purple
+		color $blue
+	&:nth-child(even)
+		background-color $blue
+		color $light-purple

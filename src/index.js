@@ -15,13 +15,15 @@ import Research from './components/Research';
 import SuccessStories from './components/SuccessStories';
 import ParentResources from './components/ParentResources';
 import Contact from './components/Contact';
-
+import DyslexiaFacts from './components/DyslexiaFacts';
 
 const componentFinder = (page='home') => {
 	
 	switch(page) {
 		case('home'):
 			return Landing;
+		case('dyslexia-facts'):
+			return DyslexiaFacts
 		case ('why-spellread-works'):
 			return WhySpellReadWorks;
 		case('research-and-media'):

@@ -41,12 +41,12 @@ class Landing extends React.Component {
 					</cite>
 				</blockquote>
 				
-				<Link to="/why-spellread-works"><span className="continue">Continue</span></Link>
+				<Link to="/dyslexia-facts"><span className="continue">Continue</span></Link>
 			</div>
             )
 
 		return (
-			<div className="page-wrapper">
+			<div className="page-wrapper landing-wrapper">
 				{quoteDiv}
 			</div>
 		)

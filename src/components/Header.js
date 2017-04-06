@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../css/images/spell-read-logo.png';
 
-const titles = ['Home', 'Why SpellRead Works', 'Research & Media', 'Success Stories', 'Parent Resources', 'Contact'];
-const links = ["", "why-spellread-works", "research-and-media", "success-stories", "parent-resources", "contact"];
+const titles = ['Home', 'What is Dyslexia?', 'Why SpellRead Works', 'Research & Media', 'Success Stories', 'Parent Resources', 'Contact'];
+const links = ["", "dyslexia-facts", "why-spellread-works", "research-and-media", "success-stories", "parent-resources", "contact"];
 
 const logo = <img className="header-logo" src={Logo} alt={"SpellRead logo"}/> 
 
