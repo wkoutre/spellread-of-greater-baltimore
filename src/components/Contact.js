@@ -1,12 +1,20 @@
 import React from 'react'
 import Joan from '../css/images/joan-and-katie.jpg';
+import CSSTransitionGroup from 'react-addons-css-transition-group';
 
 class Contact extends React.Component {
 	render() {
-		const text = <p>We enjoy every minute that we spend working with our students, and welcome any and all feedback. If you are a <strong><em>current student</em></strong> and would like to share a success story, please mention this at the beginning of your comment.</p>
+		const text = <p>We enjoy <span>every minute</span> we spend working with our students, and welcome any and all feedback. If you are a <span>current student and would like to share a success story</span>, please mention this at the beginning of your comment.</p>
 
 		return(
-			<div className="page-wrapper contact-wrapper">
+			<CSSTransitionGroup
+		          component="div"
+		          transitionName="fadeIn"
+		          transitionAppear={true}
+		          transitionAppearTimeout={1500}
+		          transitionEnterTimeout={500}
+		          transitionLeaveTimeout={500}
+		          className="page-wrapper contact-wrapper">
 				<h1>Contact Us</h1>
 				<div className="contact-text-pic">
 					{text}
@@ -51,7 +59,7 @@ class Contact extends React.Component {
 						<span>Submit</span>
 					</button>
 				</form>
-			</div>
+			</CSSTransitionGroup>
 		)
 	}
 }

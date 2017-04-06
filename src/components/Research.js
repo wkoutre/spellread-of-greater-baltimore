@@ -38,7 +38,7 @@ class Research extends React.Component {
     return (
           <CSSTransitionGroup
           component="div"
-          transitionName="slideInRight"
+          transitionName="fadeIn"
           transitionAppear={true}
           transitionAppearTimeout={1500}
           transitionEnterTimeout={500}

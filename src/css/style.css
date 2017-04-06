@@ -51,6 +51,10 @@
   max-height: 30%;
   text-align: justify;
 }
+.contact-text-pic > p span {
+  color: #28276d;
+  font-weight: bold;
+}
 .contact-text-pic > figure {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -334,10 +338,16 @@
       -ms-flex: 0 1 55%;
           flex: 0 1 55%;
 }
+.what-do-you-know li {
+  padding: 5px;
+}
 .signs-and-indicators {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 35%;
           flex: 0 1 35%;
+}
+.signs-and-indicators li {
+  padding: 5px;
 }
 .reading-isnt-difficult {
   -webkit-box-flex: 0;
@@ -724,6 +734,65 @@
   font-size: 3rem;
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+@media only screen and (max-device-width: 767px) {
+  .header {
+    background-color: #dedcea;
+  }
+}
+@media only screen and (max-device-width: 767px) {
+  #nav-ul {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    height: 0;
+  }
+}
+@media only screen and (max-device-width: 767px) {
+  #nav-ul > li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    font-size: 2rem;
+    height: 0;
+  }
+  #nav-ul > li > a {
+    border: none;
+  }
+}
+#menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #dedcea;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  text-align: center;
 }
 .not-found {
   position: fixed;
@@ -1289,6 +1358,14 @@
           transform: translateX(0);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+.fadeIn-appear {
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+.fadeIn-appear.fadeIn-appear-active {
+  opacity: 1;
 }
 .why-spellread-works {
   display: -webkit-box;

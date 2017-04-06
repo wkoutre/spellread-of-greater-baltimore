@@ -1,5 +1,6 @@
 import React from 'react'
 import { successes } from './content/_successStories.js';
+import CSSTransitionGroup from 'react-addons-css-transition-group';
 
 class SuccessStories extends React.Component {
 	constructor() {
@@ -71,12 +72,19 @@ class SuccessStories extends React.Component {
 		});
 
 		return (
-			<div className="page-wrapper research-wrapper">
+			<CSSTransitionGroup
+          component="div"
+          transitionName="fadeIn"
+          transitionAppear={true}
+          transitionAppearTimeout={1500}
+          transitionEnterTimeout={500}
+          transitionLeaveTimeout={500}
+          className="page-wrapper research-wrapper">
 				<div className="success-content">
 					{mappedStories}
 				</div>
 				<button onClick={() => this.changeStories()}><span>More Stories</span></button>
-			</div>
+			</CSSTransitionGroup>
 		)
 	}
 }

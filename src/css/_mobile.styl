@@ -1,0 +1,44 @@
+.header
+	@media only screen and (max-device-width: 767px)
+		background-color $light-purple
+		
+// 	position fixed
+// 	padding 10px 0
+// 	top 0
+// 	width 100vw
+// 	left 0
+
+#nav-ul
+	@media only screen and (max-device-width: 767px)
+		transition all 0.5s
+		{$flex-row-wrap}
+		justify-content center
+		align-items flex-start
+		align-self flex-start
+		height 0
+			
+	/* header links */
+	& > li
+		@media only screen and (max-device-width: 767px)
+			// {$list-color-alternate}
+			flex 0 1 100%
+			font-size 2rem
+			height 0
+			
+			// text-align center
+			
+			// border 2px solid black
+			& > a
+				border none
+				
+#menu
+	{$flex-row}
+	// border 1px solid black
+	background-color $light-purple
+	justify-content  center
+	align-self flex-start
+	// max-height 5%
+	text-align  center
+
+// .header-logo
+// 	height 5%

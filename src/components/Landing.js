@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { citedURL, quote, author } from './content/_landing';
+import CSSTransitionGroup from 'react-addons-css-transition-group';
 // import CSSTransitionGroup from 'react-addons-css-transition-group';
 // import ReactTransitionGroup from 'react-addons-css-transition-group';
 
@@ -21,11 +22,11 @@ class Landing extends React.Component {
 	// }
 
 	render() {
-
 		// const arrowClasses = "down-arrow animated pulse infinite";
 
 
             const quoteDiv = (
+
             	<div key="landing" className="landing">
 				<blockquote>
 					{quote}
@@ -46,9 +47,16 @@ class Landing extends React.Component {
             )
 
 		return (
-			<div className="page-wrapper landing-wrapper">
+			<CSSTransitionGroup
+			          component="div"
+			          transitionName="fadeIn"
+			          transitionAppear={true}
+			          transitionAppearTimeout={1500}
+			          transitionEnterTimeout={500}
+			          transitionLeaveTimeout={500}
+			          className="page-wrapper landing-wrapper">
 				{quoteDiv}
-			</div>
+			</CSSTransitionGroup>
 		)
 	}
 }
