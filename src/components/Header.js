@@ -121,7 +121,7 @@ class Header extends React.Component {
 
   render() {
     const width = screen.width;
-    const navStyle = width < 768 ? {"height": "3.5vh"} : ""
+    const navStyle = width < 768 ? {"height": "3.5vh"} : {"height": "auto"}
     return (
       <header className="header">
         <nav role="navigation">
