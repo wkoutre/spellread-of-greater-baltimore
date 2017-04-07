@@ -25,6 +25,12 @@ class Header extends React.Component {
 		const showChildren = () => {
 			const navUl = document.getElementById("nav-ul");
 			const height = document.getElementById("nav-ul").style.height;
+			const navLinks = document.getElementById("nav-ul").children;
+
+			for (let i = 1; i < navLinks.length; i++){
+				let displayStyle = navLinks[i].style.display;
+				navLinks[i].style.display = navLinks[i].style.display === 'none' ? 'block' : 'none';
+			}
 
 			navUl.style.height = height !== '50vh' ? '50vh' : '0';
 			// console.log('classList', navUl.classList);
@@ -37,6 +43,8 @@ class Header extends React.Component {
 		if (width < 768){
 			for (let i = 0; i < navLinks.length; i++){
 				navLinks[i].addEventListener('click', () => showChildren());
+				if (i > 0)
+					navLinks[i].style.display = 'none';
 			}
 		}
 	}
@@ -49,10 +57,7 @@ class Header extends React.Component {
 			title = title === 'Home' ? logo : title;
 			style = `${links[i]}-header`
 		} else {
-			if (i > 0)
-				style = `${links[i]}-header noDisplay`
-			else
-				style = `${links[i]}-header displayMe`
+			style = `${links[i]}-header`
 		}
 		// styling the active path (manually... without using React's activeClassName)
 		if (links[i].length > 0 && this.context.router.route.location.pathname.match(links[i])) {

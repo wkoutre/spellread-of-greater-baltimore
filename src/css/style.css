@@ -615,6 +615,8 @@
 }
 .nav-wrapper ul li a:hover {
   font-weight: bold;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .nav-wrapper ul li a img {
   height: 5vmin;
@@ -761,7 +763,6 @@
             align-items: flex-start;
     -ms-flex-item-align: start;
         align-self: flex-start;
-    height: 0;
   }
 }
 @media only screen and (max-device-width: 767px) {
@@ -770,7 +771,6 @@
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
     font-size: 2rem;
-    height: 0;
   }
   #nav-ul > li > a {
     border: none;
