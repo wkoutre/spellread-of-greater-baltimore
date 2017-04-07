@@ -16,8 +16,8 @@ class Footer extends React.Component {
       else
         this.toggleFooterDisplay();
 
-       if (height !== '78vh')
-        footerDiv.style.height = '78vh';
+       if (height !== '85vh')
+        footerDiv.style.height = '85vh';
        else
         footerDiv.style.height = '5.5vh';
     }
@@ -42,7 +42,6 @@ class Footer extends React.Component {
 
   toggleFooterDisplay = () => {
     const footerLinks = document.getElementById("footer-div").children;
-    console.log(footerLinks);
 
     for (let i = 0; i < footerLinks.length - 1; i++){
       footerLinks[i].style.display = footerLinks[i].style.display === 'none' ? 'flex' : 'none';

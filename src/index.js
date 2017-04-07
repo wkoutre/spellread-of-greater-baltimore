@@ -56,6 +56,7 @@ const PathRendered = (props) => {
 class Root extends React.Component {
 
 	render() {
+    document.addEventListener("touchstart", function(){}, true);
 		return (
 			<BrowserRouter>
 				<Route path="/:pageName?" render={PathRendered}/>
