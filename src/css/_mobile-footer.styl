@@ -20,9 +20,9 @@
     // justify-content center
   .footer-title
     // border 1px solid black
-    font-size 3rem
+    font-size 1em
     color $white
-    padding 1.7vh
+    padding 3vh 0 1vh 0
 
   .nav-links, .footer-section
     {$flex-col}
@@ -32,8 +32,8 @@
       font-family $content
       color: $beige
       border-bottom: 1px dashed $blue
-    & span, #Copyright
-      font-size 2.75rem
+    & span
+      font-size 1em
       color $light-purple
     & > h4
       text-align center
@@ -47,6 +47,7 @@
     
   .footer-section:nth-last-child(1)
     order -1
+    width 100vw
 
   #address > span
     color: $beige
@@ -54,10 +55,12 @@
   #INFORMATION
     color $light-purple
     padding 1vh
-    font-size 2.5rem
+    font-size 1em
     // text-decoration overline
 
 @media (orientation: landscape)
+  .footer
+    
   #footer-div
     flex 0 1 100%
     // border 1px solid white
@@ -65,8 +68,22 @@
     align-items flex-start
     justify-content space-around
   .footer-section, .nav-links
-    flex 0 1 20%
+    {$flex-row-wrap}
+    justify-content center
+    flex 0 1 22%
+    
+  .footer-section
+    height 50%
+  .nav-links
+    height 80%
+    align-items space-around
+    & > h4
+      height 10%
+    & > ul
+      {$flex-row-wrap}
+      justify-content center
   .footer-section:nth-last-child(1)
     order -1
     flex 0 1 100%
+    height auto
     // border 1px solid white

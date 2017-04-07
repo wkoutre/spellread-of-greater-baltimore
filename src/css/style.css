@@ -777,9 +777,9 @@
             flex-direction: column;
   }
   .footer-title {
-    font-size: 3rem;
+    font-size: 1em;
     color: #f7f6f2;
-    padding: 1.7vh;
+    padding: 3vh 0 1vh 0;
   }
   .nav-links,
   .footer-section {
@@ -800,10 +800,8 @@
     border-bottom: 1px dashed #6b7a8f;
   }
   .nav-links span,
-  .footer-section span,
-  .nav-links #Copyright,
-  .footer-section #Copyright {
-    font-size: 2.75rem;
+  .footer-section span {
+    font-size: 1em;
     color: #dedcea;
   }
   .nav-links > h4,
@@ -820,6 +818,7 @@
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
+    width: 100vw;
   }
   #address > span {
     color: #dcc7aa;
@@ -827,10 +826,11 @@
   #INFORMATION {
     color: #dedcea;
     padding: 1vh;
-    font-size: 2.5rem;
+    font-size: 1em;
   }
 }
 @media (orientation: landscape) {
+  .footer,
   #footer-div {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
@@ -852,9 +852,47 @@
   }
   .footer-section,
   .nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 20%;
-            flex: 0 1 20%;
+        -ms-flex: 0 1 22%;
+            flex: 0 1 22%;
+  }
+  .footer-section {
+    height: 50%;
+  }
+  .nav-links {
+    height: 80%;
+    -webkit-box-align: space-around;
+        -ms-flex-align: space-around;
+            align-items: space-around;
+  }
+  .nav-links > h4 {
+    height: 10%;
+  }
+  .nav-links > ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .footer-section:nth-last-child(1) {
     -webkit-box-ordinal-group: 0;
@@ -863,6 +901,7 @@
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
+    height: auto;
   }
 }
 @media only screen and (max-device-width: 767px) {
@@ -941,8 +980,8 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 50%;
-            flex: 0 1 50%;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
     font-size: 2.5rem;
     background-color: #dedcea;
     -webkit-box-pack: center;
