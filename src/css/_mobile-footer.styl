@@ -22,7 +22,7 @@
     // border 1px solid black
     font-size 0.9em
     color $white
-    padding 2vh 0 0.2vh 0
+    padding 2vh 0 0 0
 
   .nav-links, .footer-section
     {$flex-col}
@@ -41,6 +41,24 @@
     & > ul,
     & > div
       text-align center
+      
+  .nav-links
+    // border 1px solid white
+    {$flex-row-wrap}
+    justify-content center
+    & > h4
+      flex 0 1 100%
+      // border 1px solid white
+    & > ul
+      flex 0 1 80%
+      {$flex-row-wrap}
+      // border 1px solid white
+      justify-content space-around
+      & > li
+        flex 0 1 20%
+        // border 1px solid white
+        
+        
       
   // .footer-section:nth-last-child(2)
   //   // border 1px solid white
@@ -83,9 +101,8 @@
   .footer-section
     height 50%
   .nav-links
-    flex 1
     & > h4
-      height 10%
+      padding-bottom 1vh
     & > ul
       height 65%
       {$flex-row-wrap}
