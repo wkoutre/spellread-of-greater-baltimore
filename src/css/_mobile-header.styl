@@ -1,0 +1,48 @@
+// BUG: going to why-sr-works page on mobile makes all links unclickable except home and menu
+
+@media only screen and (max-device-width: 767px)
+  .header
+    background-color $light-purple
+    position fixed
+    padding 1vh 0
+    @media (orientation: landscape)
+      padding 1vmin 0 3.5vmin 0
+    top 0
+    width 100vw
+    left 0
+    z-index 10
+    transition all 0.5s
+    border-bottom 1vh double $dark-purple
+  #nav-ul
+    transition all 0.5s
+    {$flex-row-wrap}
+    justify-content center
+    align-items space-around
+    align-self flex-start
+    /* header links */
+    & > li:not(#menu)
+      flex 0 1 55%
+      height 4rem
+      {$flex-row-wrap}
+      justify-content center
+      font-size 2.5rem
+      & > a
+        font-family $content
+        text-decoration none
+        flex 0 1 100%
+        padding 1vh
+        text-align center
+        color $blue
+        // border-bottom none
+
+  #menu
+   {$flex-row}
+   flex 0 1 50%
+   font-size 2.5rem
+   background-color $light-purple
+   justify-content  center
+   align-self flex-start
+   text-align  center
+   color $dark-purple
+   font-family $heading
+   // border-bottom 1px solid $dark-purple

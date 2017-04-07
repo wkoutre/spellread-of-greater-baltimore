@@ -1,0 +1,70 @@
+@media only screen and (max-device-width: 767px)
+  .footer
+    font-family $content
+    {$flex-row-wrap}
+    z-index 9
+    position fixed
+    width 100vw
+    padding 1vmin
+    @media (orientation: landscape)
+      padding 1vmin 0 3vmin 0
+    bottom 0
+    left 0
+    font-size 3rem
+    justify-content space-around
+    background-color $dark-purple
+    border-top 1vh double $white
+  #footer-div
+    transition all 0.5s
+    {$flex-col-wrap}
+  .footer-title
+    // border 1px solid black
+    font-size 3rem
+    color $white
+    padding 1.7vh
+
+  .nav-links, .footer-section
+    {$flex-col}
+    & a
+      text-decoration none
+      font-family $content
+      color: $beige
+      border-bottom: 1px dashed $blue
+    & span, #Copyright
+      font-size 2.75rem
+      color $light-purple
+    & > h4
+      text-align center
+    & > ul,
+    & > div
+      text-align center
+      
+  // .footer-section:nth-last-child(2)
+  //   // border 1px solid white
+  //   padding-bottom 2vh
+    
+  .footer-section:nth-last-child(1)
+    order -1
+
+  #address > span
+    color: $beige
+    
+  #INFORMATION
+    color $light-purple
+    padding 1vh
+    font-size 2.5rem
+    // text-decoration overline
+
+@media (orientation: landscape)
+  #footer-div
+    flex 0 1 100%
+    // border 1px solid white
+    {$flex-row-wrap}
+    align-items flex-start
+    justify-content space-around
+  .footer-section, .nav-links
+    flex 0 1 20%
+  .footer-section:nth-last-child(1)
+    order -1
+    flex 0 1 100%
+    // border 1px solid white
