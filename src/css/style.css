@@ -797,11 +797,12 @@
     text-decoration: none;
     font-family: Cormorant;
     color: #dcc7aa;
+    font-size: 0.9em;
     border-bottom: 1px dashed #6b7a8f;
   }
   .nav-links span,
   .footer-section span {
-    font-size: 0.9em;
+    font-size: 1em;
     color: #dedcea;
   }
   .nav-links > h4,
