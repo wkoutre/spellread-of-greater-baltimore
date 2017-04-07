@@ -756,7 +756,7 @@
     z-index: 9;
     position: fixed;
     width: 100vw;
-    padding: 1vmin;
+    padding: 1vmin 1vmin 2vmin 1vmin;
     bottom: 0;
     left: 0;
     font-size: 3rem;
