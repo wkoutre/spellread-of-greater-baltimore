@@ -867,9 +867,13 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 22%;
             flex: 0 1 22%;
+    height: 80%;
   }
   .footer-section > div,
   .nav-links > div {
@@ -878,26 +882,18 @@
             flex: 0 1 100%;
   }
   .footer-section {
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-  }
-  .footer-section > h4 {
-    height: 10%;
-  }
-  .footer-section {
     height: 50%;
   }
   .nav-links {
-    height: 80%;
-    -webkit-box-align: space-around;
-        -ms-flex-align: space-around;
-            align-items: space-around;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
   .nav-links > h4 {
     height: 10%;
   }
   .nav-links > ul {
+    height: 65%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -910,6 +906,15 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: space-around;
+        -ms-flex-align: space-around;
+            align-items: space-around;
+  }
+  .nav-links > ul > li {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 100%;
+            flex: 1 100%;
+    font-size: 0.9em;
   }
   .footer-section:nth-last-child(1) {
     -webkit-box-ordinal-group: 0;
