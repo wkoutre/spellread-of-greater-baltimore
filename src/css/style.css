@@ -421,7 +421,7 @@
         flex-wrap: wrap;
     position: fixed;
     width: 100vw;
-    padding: 1vmin 0;
+    padding: 1vh 0 2.5vh 0;
     bottom: 0;
     left: 0;
     background-color: #f7f6f2;
@@ -870,7 +870,7 @@
     font-size: 1em;
   }
 }
-@media (orientation: landscape) {
+@media only screen and (max-device-width: 767px) and (orientation: landscape) {
   .footer {
     font-size: 3.2rem;
   }
@@ -1764,7 +1764,7 @@
   text-align: center;
   color: #f7f6f2;
 }
-@media only screen and (max-device-width: 767px) and (orientation: landscape) {
+@media only screen and (max-device-width: 767px) and (max-device-width: 767px) and (orientation: landscape) {
   .footer {
     padding: 0 0 4vh 0;
   }
