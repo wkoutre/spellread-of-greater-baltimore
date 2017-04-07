@@ -20,6 +20,17 @@ class Header extends React.Component {
 	// 	const navUl = document.querySelectorAll('.nav-wrapper');
 	// 	console.log(navUl);
 	// }
+	toggleHeaderDisplay = () => {
+		const navLinks = document.getElementById("nav-ul").children;
+
+		for (let i = 1; i < navLinks.length; i++){
+			let displayStyle = navLinks[i].style.display;
+			navLinks[i].style.display = navLinks[i].style.display === 'none' ? 'block' : 'none';
+			navLinks[i].style.opacity = !navLinks[i].style.opacity;
+			if (i === 1)
+				console.log(navLinks[i].style.filter)
+		}
+	}
 
 	componentDidMount() {
 		const showChildren = () => {
@@ -27,12 +38,16 @@ class Header extends React.Component {
 			const height = document.getElementById("nav-ul").style.height;
 			const navLinks = document.getElementById("nav-ul").children;
 
-			for (let i = 1; i < navLinks.length; i++){
-				let displayStyle = navLinks[i].style.display;
-				navLinks[i].style.display = navLinks[i].style.display === 'none' ? 'block' : 'none';
-			}
+			if (navLinks[1].style.display === 'none')
+				setTimeout(this.toggleHeaderDisplay, 150);
+			else
+				this.toggleHeaderDisplay();
 
-			navUl.style.height = height !== '50vh' ? '50vh' : '0';
+			 
+			 if (height !== '60vh')
+			 	navUl.style.height = '60vh';
+			 else
+			 	navUl.style.height = '4vh';
 			// console.log('classList', navUl.classList);
 		}
 
@@ -43,8 +58,11 @@ class Header extends React.Component {
 		if (width < 768){
 			for (let i = 0; i < navLinks.length; i++){
 				navLinks[i].addEventListener('click', () => showChildren());
-				if (i > 0)
+				if (i > 0){
 					navLinks[i].style.display = 'none';
+					// navLinks[i].style.opacity = 0;
+				}
+
 			}
 		}
 	}
