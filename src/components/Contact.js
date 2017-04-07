@@ -33,7 +33,6 @@ class Contact extends React.Component {
 						type="text"
 						name="firstname"
 						autoComplete="on"
-						autoFocus
 						placeholder="First name"/></div>
 					<div><span>*Last Name:</span> <input required
 						type="text" 
