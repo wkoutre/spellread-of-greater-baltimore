@@ -16,8 +16,8 @@ class Footer extends React.Component {
       else
         this.toggleFooterDisplay();
 
-       if (height !== '85vh')
-        footerDiv.style.height = '85vh';
+       if (height !== '75vh')
+        footerDiv.style.height = '75vh';
        else
         footerDiv.style.height = '5.5vh';
     }
