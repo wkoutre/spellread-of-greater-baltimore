@@ -16,7 +16,10 @@
     border-top 1vh double $white
   #footer-div
     transition all 0.5s
-    {$flex-col-wrap}
+    {$flex-row-wrap}
+    justify-content center
+    & > *
+      flex 0 1 60%
   .footer-title
     // border 1px solid black
     font-size 3rem
