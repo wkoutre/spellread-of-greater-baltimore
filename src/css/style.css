@@ -777,9 +777,9 @@
             flex-direction: column;
   }
   .footer-title {
-    font-size: 1em;
+    font-size: 0.9em;
     color: #f7f6f2;
-    padding: 3vh 0 1vh 0;
+    padding: 2vh 0 1vh 0;
   }
   .nav-links,
   .footer-section {
@@ -801,7 +801,7 @@
   }
   .nav-links span,
   .footer-section span {
-    font-size: 1em;
+    font-size: 0.9em;
     color: #dedcea;
   }
   .nav-links > h4,
@@ -867,6 +867,20 @@
     -webkit-box-flex: 0;
         -ms-flex: 0 1 22%;
             flex: 0 1 22%;
+  }
+  .footer-section > div,
+  .nav-links > div {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+  .footer-section {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .footer-section > h4 {
+    height: 10%;
   }
   .footer-section {
     height: 50%;

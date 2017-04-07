@@ -20,9 +20,9 @@
     // justify-content center
   .footer-title
     // border 1px solid black
-    font-size 1em
+    font-size 0.9em
     color $white
-    padding 3vh 0 1vh 0
+    padding 2vh 0 1vh 0
 
   .nav-links, .footer-section
     {$flex-col}
@@ -33,7 +33,7 @@
       color: $beige
       border-bottom: 1px dashed $blue
     & span
-      font-size 1em
+      font-size 0.9em
       color $light-purple
     & > h4
       text-align center
@@ -71,6 +71,13 @@
     {$flex-row-wrap}
     justify-content center
     flex 0 1 22%
+    & > div
+      flex 0 1 100%
+  .footer-section
+    // border 1px solid gold
+    align-items flex-end
+    & > h4
+      height 10%
     
   .footer-section
     height 50%
