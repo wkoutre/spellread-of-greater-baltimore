@@ -823,7 +823,7 @@
             flex: 1 1 25%;
     font-family: Cormorant;
     font-size: 2rem;
-    border: 2px solid #dedcea;
+    border: none;
     background-color: #dedcea;
     border-radius: 5px;
     padding: 3px;
@@ -839,7 +839,7 @@
             flex: 1 1 25%;
     font-family: Cormorant;
     font-size: 2rem;
-    border: 2px solid #dedcea;
+    border: none;
     background-color: #dedcea;
     border-radius: 5px;
     padding: 3px;
@@ -888,7 +888,7 @@
         -ms-flex: 0 1 50%;
             flex: 0 1 50%;
     height: 35px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
   .contact-wrapper form button > * {
     -webkit-box-flex: 1;
@@ -915,7 +915,7 @@
     font-size: 2.5rem;
   }
   .comment-box {
-    height: 30%;
+    height: 20%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 70%;
             flex: 0 1 70%;
