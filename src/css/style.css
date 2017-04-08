@@ -2527,6 +2527,8 @@ button:active {
           justify-content: center;
 }
 .page-wrapper {
+  position: fixed;
+  top: 8vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2539,7 +2541,7 @@ button:active {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 100%;
           flex: 1 1 100%;
-  height: 76%;
+  height: 82vh;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   background-color: #6b7a8f;
