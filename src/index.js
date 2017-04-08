@@ -71,7 +71,7 @@ class Root extends React.Component {
 
 	render() {
     		document.addEventListener("touchstart", function(){}, true);
-    		this.toggleFullScreen();
+    		// this.toggleFullScreen();
 
 		return (
 			<BrowserRouter>
