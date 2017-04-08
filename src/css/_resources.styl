@@ -2,8 +2,10 @@
 	.resources-wrapper
 		justify-content center
 		align-items center
-		flex-wrap wrap
-		align-items space-around
+	.resources
+		height 98%
+		{$flex-row-wrap}
+		align-items flex-starta
 		& blockquote
 			flex 0 1 90%
 			// align-self flex-start
@@ -47,7 +49,6 @@
 		& > div
 			{$flex-col}
 			flex 0 1 36vw
-			height 100%
 			// border 1px solid green
 			
 			& > h5
@@ -60,7 +61,6 @@
 				// text-decoration-style dotted
 			& > ul
 				{$flex-row-wrap}
-				height 100%
 				justify-content center
 				font-family $content
 				line-height 1.25rem

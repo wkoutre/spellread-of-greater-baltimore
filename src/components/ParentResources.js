@@ -16,9 +16,11 @@ class ParentResources extends React.Component {
 		          transitionEnterTimeout={500}
 		          transitionLeaveTimeout={500}
 		          className="page-wrapper resources-wrapper">
-				{timeQuote}
-				{symptoms}
-				{whatWeKnow}
+		          	<div className="resources">
+					{timeQuote}
+					{symptoms}
+					{whatWeKnow}
+				</div>
 			</CSSTransitionGroup>
 		)
 	}
