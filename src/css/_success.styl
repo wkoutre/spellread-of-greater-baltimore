@@ -1,44 +1,45 @@
-.research-wrapper
-	{$flex-row-wrap}
-	justify-content center
-	align-items center
-	& > button
-		{$button-style}
-		flex 0 1 30%
-
-.success-content
-	display flex
-	flex-wrap wrap
-	align-items space-around
-	justify-content space-around
-	height 90%
-	// border 2px solid white
-
-.story-container
-	// border 1px solid red
-	flex 0 1 47.5%
-	height 49.5%
-	display flex
-	flex-wrap wrap
-	// justify-content center
-	& h2
-		color $white
-		// border 1px solid blue
-		flex 1 1 90%
-		// max-height 10%
-		align-self center
-		display flex
-		align-items center
+@media only screen and (min-device-width: 768px)
+	.research-wrapper
+		{$flex-row-wrap}
 		justify-content center
-	& p
-		overflow-y auto
-		text-align justify
-		height 60%
-		// display flex
-		// align-items flex-start
-		align-self flex-start
-		flex 0 1 100%
-		// border 1px solid yellow
-		// display flex
-		padding 2vw
-		// align-items center
+		align-items center
+		& > button
+			{$button-style}
+			flex 0 1 30%
+
+	.success-content
+		display flex
+		flex-wrap wrap
+		align-items space-around
+		justify-content space-around
+		height 90%
+		// border 2px solid white
+
+	.story-container
+		// border 1px solid red
+		flex 0 1 47.5%
+		height 49.5%
+		display flex
+		flex-wrap wrap
+		// justify-content center
+		& h2
+			color $white
+			// border 1px solid blue
+			flex 1 1 90%
+			// max-height 10%
+			align-self center
+			display flex
+			align-items center
+			justify-content center
+		& p
+			overflow-y auto
+			text-align justify
+			height 60%
+			// display flex
+			// align-items flex-start
+			align-self flex-start
+			flex 0 1 100%
+			// border 1px solid yellow
+			// display flex
+			padding 2vw
+			// align-items center

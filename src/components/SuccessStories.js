@@ -79,7 +79,7 @@ class SuccessStories extends React.Component {
           transitionAppearTimeout={1500}
           transitionEnterTimeout={500}
           transitionLeaveTimeout={500}
-          className="page-wrapper research-wrapper">
+          className="page-wrapper success-wrapper">
 				<div className="success-content">
 					{mappedStories}
 				</div>
