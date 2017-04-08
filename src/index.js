@@ -54,9 +54,25 @@ const PathRendered = (props) => {
 }
 
 class Root extends React.Component {
+	toggleFullScreen = () => {
+		  var doc = window.document;
+		  var docEl = doc.documentElement;
+
+		  var requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
+		  var cancelFullScreen = doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
+
+		  if(!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
+		    requestFullScreen.call(docEl);
+		  }
+		  else {
+		    cancelFullScreen.call(doc);
+		  }
+		}
 
 	render() {
-    document.addEventListener("touchstart", function(){}, true);
+    		document.addEventListener("touchstart", function(){}, true);
+    		this.toggleFullScreen();
+
 		return (
 			<BrowserRouter>
 				<Route path="/:pageName?" render={PathRendered}/>
