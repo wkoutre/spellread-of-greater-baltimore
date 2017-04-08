@@ -1324,6 +1324,9 @@
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .research-content {
     height: 70%;
@@ -1398,7 +1401,7 @@
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
-    font-size: 1em;
+    font-size: 0.8em;
   }
   .research-content > div > div > h3 > a {
     color: #343435;
@@ -1426,7 +1429,7 @@
     -webkit-box-flex: 0;
         -ms-flex: 0 1 65%;
             flex: 0 1 65%;
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 5vh 0;
     height: 10vh;
   }
