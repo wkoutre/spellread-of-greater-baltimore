@@ -1,0 +1,35 @@
+@media only screen and (max-device-width: 767px)
+	.landing-wrapper
+		justify-content center
+	.landing
+		flex 0 1 90%
+		{flex-row-wrap}
+		justify-content center
+		font-size 3.5rem
+		& > blockquote
+			font-size 1em
+			align-self center
+			flex 0 1 90%
+			{$flex-row-wrap}
+			justify-content center
+			text-align center
+			height 80%
+			color $white
+			// border 1px solid white
+			& > cite
+				font-size 0.9em
+				& a
+					{$link-style}
+					color $light-yellow
+					border-bottom 1px dashed $light-purple
+					
+		& > a
+			flex 0 1 50%
+			text-decoration none
+			// border 1px solid white
+			{$flex-row}
+			justify-content center
+			& > span
+				flex 0 1 10%
+				{$link-style}
+				color $white

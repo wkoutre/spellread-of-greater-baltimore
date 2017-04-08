@@ -1,62 +1,63 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css')
 
-.flex
-	display flex
+@media only screen and (min-width: 768px)
+	.flex
+		display flex
 
-// .more-info
-// 	// font-size 2rem
-	
-.landing
-	{$flex-row-wrap}
-	flex 0 1 75%
-	height 80%
-	align-items center
-	justify-content space-around
-	text-align center
-	&-wrapper
-		justify-content center
-		align-items center
-	& hr
-		width 80%
-		// height 2px
-		// background $white
-		// background-color $white
-		border-bottom 1px dotted $white
+	// .more-info
+	// 	// font-size 2rem
 		
-	& > blockquote
+	.landing
 		{$flex-row-wrap}
+		flex 0 1 75%
+		height 80%
 		align-items center
 		justify-content space-around
-		height 60%
-		font-style italic
-		font-size 2.25rem
-		color $white
-		// border 1px solid white
-		& > cite
-			& > a
-				transition all 0.3s
-				color $light-yellow
-				font-family $content
-				text-decoration none
-				border-bottom 1px dashed $light-purple
-				font-size 1.5rem
-				&:hover
-					color $yellow
-					cursor pointer
-					border-bottom 1px dashed $dark-purple
-		& > span
-			flex 0 1 100%
-			width 100%
-	& > a
-		text-decoration none
-		font-family $content
-		border-bottom 1px dashed $dark-purple
-		color $white		
-		transition all 0.3s
-		&:hover
-			// color $light-purple
-			border-bottom 1px dashed $white
+		text-align center
+		&-wrapper
+			justify-content center
+			align-items center
+		& hr
+			width 80%
+			// height 2px
+			// background $white
+			// background-color $white
+			border-bottom 1px dotted $white
+			
+		& > blockquote
+			{$flex-row-wrap}
+			align-items center
+			justify-content space-around
+			height 60%
+			font-style italic
+			font-size 2.25rem
+			color $white
+			// border 1px solid white
+			& > cite
+				& > a
+					transition all 0.3s
+					color $light-yellow
+					font-family $content
+					text-decoration none
+					border-bottom 1px dashed $light-purple
+					font-size 1.5rem
+					&:hover
+						color $yellow
+						cursor pointer
+						border-bottom 1px dashed $dark-purple
+			& > span
+				flex 0 1 100%
+				width 100%
+		& > a
+			text-decoration none
+			font-family $content
+			border-bottom 1px dashed $dark-purple
+			color $white		
+			transition all 0.3s
+			&:hover
+				// color $light-purple
+				border-bottom 1px dashed $white
 
-.continue
-	font-size 3rem
-	align-self flex-end
+	.continue
+		font-size 3rem
+		align-self flex-end
