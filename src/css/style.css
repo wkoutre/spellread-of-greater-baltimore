@@ -1306,9 +1306,6 @@
   }
 }
 @media only screen and (max-device-width: 767px) {
-  .research-wrapper {
-    margin-bottom: 15vh;
-  }
   .research {
     height: 100%;
     display: -webkit-box;
@@ -1350,6 +1347,7 @@
             flex: 0 1 75%;
     font-size: 0.9em;
     height: 35px;
+    margin-bottom: 20px;
   }
   .research > button > * {
     -webkit-box-flex: 1;
@@ -1643,7 +1641,6 @@
     text-align: justify;
     font-size: 1em;
     line-height: 1.3em;
-    padding-bottom: 20px;
   }
   .why-spellread-works > div:first-child h5 {
     margin-top: 0;
@@ -1659,6 +1656,9 @@
         -ms-flex: 0 1 70%;
             flex: 0 1 70%;
     margin: 20px 0 0 0;
+  }
+  #why-sr-works-5 p {
+    padding-bottom: 40px;
   }
   .bottom-text {
     display: none;
