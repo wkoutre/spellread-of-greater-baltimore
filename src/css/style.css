@@ -844,7 +844,7 @@
             justify-content: center;
     height: 40px;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
   .dyslexia-facts-wrapper > div button > * {
     -webkit-box-flex: 1;
@@ -2508,7 +2508,7 @@ button:active {
 #root {
   background-color: #6b7a8f;
   position: fixed;
-  height: 110vh;
+  height: 100vh;
   min-width: 100vw;
   max-width: 100vw;
 /* REACT-ROOT DIV */
@@ -2539,10 +2539,7 @@ button:active {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 100%;
           flex: 1 1 100%;
-  height: 80%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  height: 76%;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   background-color: #6b7a8f;
