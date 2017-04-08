@@ -1316,25 +1316,46 @@
     font-size: 3rem;
   }
   .research > button {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 75%;
-            flex: 0 1 75%;
-    font-size: 0.8em;
-    height: 35px;
+    font-family: Cormorant;
+    background-color: #f7f6f2;
+    color: #6b7a8f;
+    border-radius: 2px;
+    box-shadow: -0.25rem 0.5rem 0.5rem #343435;
+    border: 5px solid #f7f6f2;
+    font-size: 1rem;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    outline: 0;
     -ms-flex-item-align: center;
         align-self: center;
+    width: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 75%;
+            flex: 0 1 75%;
+    font-size: 1.1em;
+    height: 35px;
+  }
+  .research > button > * {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .research > button:hover,
+  .research > button:active {
+    cursor: pointer;
+    opacity: 0.9;
+    box-shadow: -0.175rem 0.375rem 0.375rem #343435;
+  }
+  .research > button:active {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+    box-shadow: -0.125rem 0.25rem 0.25rem #343435;
   }
   .research-content {
     height: 70%;
@@ -1434,24 +1455,49 @@
 }
 @media only screen and (max-device-width: 767px) {
   .success-wrapper  > button {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 65%;
-            flex: 0 1 65%;
-    font-size: 3.5rem;
-    margin: 5vh 0;
-    height: 10vh;
+    font-family: Cormorant;
+    background-color: #f7f6f2;
+    color: #6b7a8f;
+    border-radius: 2px;
+    box-shadow: -0.25rem 0.5rem 0.5rem #343435;
+    border: 5px solid #f7f6f2;
+    font-size: 1rem;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    outline: 0;
+    -ms-flex-item-align: center;
+        align-self: center;
+    width: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 75%;
+            flex: 0 1 75%;
+    font-size: 3rem;
+    -ms-flex: 0 1 65%;
+        flex: 0 1 65%;
+    margin: 5vh 0;
+    height: 10vh;
+  }
+  .success-wrapper  > button > * {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .success-wrapper  > button:hover,
+  .success-wrapper  > button:active {
+    cursor: pointer;
+    opacity: 0.9;
+    box-shadow: -0.175rem 0.375rem 0.375rem #343435;
+  }
+  .success-wrapper  > button:active {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+    box-shadow: -0.125rem 0.25rem 0.25rem #343435;
   }
   .success-content {
     display: -webkit-box;
