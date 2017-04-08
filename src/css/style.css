@@ -1547,18 +1547,18 @@
   }
   .resources-wrapper > div > h4 {
     font-size: 1.4em;
-    margin-bottom: 3vh;
+    margin-bottom: 35px;
   }
   .resources-wrapper > div > h4 > span {
     color: #28276d;
   }
   .resources-wrapper > div h5 {
     font-size: 1.25em;
-    margin-bottom: 2vh;
+    margin-bottom: 15px;
   }
   .resources-wrapper > div ul {
     font-size: 1em;
-    margin-bottom: 5vh;
+    margin-bottom: 35px;
   }
   .resources-wrapper > div ul > li {
     padding: 5px;
