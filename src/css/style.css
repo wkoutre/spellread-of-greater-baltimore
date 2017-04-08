@@ -3181,6 +3181,11 @@ button:active {
   -webkit-overflow-scrolling: touch;
   background-color: #6b7a8f;
 }
+@media only screen and (max-device-width: 1024px) {
+  .page-wrapper {
+    height: 86vh;
+  }
+}
 .page-wrapper > * {
   margin-top: 20px;
 }
