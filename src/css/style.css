@@ -1495,9 +1495,8 @@
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1507,9 +1506,9 @@
   }
   .resources-wrapper blockquote > span {
     font-size: 1.1em;
-    -webkit-box-flex: 0.5;
-        -ms-flex: 0.5 1 60%;
-            flex: 0.5 1 60%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 60%;
+            flex: 0 1 60%;
   }
   .resources-wrapper blockquote > a {
     -webkit-box-flex: 0;
@@ -1547,7 +1546,7 @@
     border-bottom: 1px dashed #f7882f;
   }
   .resources-wrapper > div > h4 {
-    font-size: 1.5em;
+    font-size: 1.4em;
     margin-bottom: 3vh;
   }
   .resources-wrapper > div > h4 > span {
