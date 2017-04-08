@@ -1325,6 +1325,7 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 20px;
   }
   .why-spellread-works > div > div {
     -webkit-box-flex: 0;
@@ -1356,8 +1357,8 @@
         -ms-flex: 0 1 90%;
             flex: 0 1 90%;
     text-align: justify;
-    font-size: 0.8em;
-    line-height: 1.2em;
+    font-size: 1em;
+    line-height: 1.3em;
   }
   .why-spellread-works > div:first-child h5 {
     margin-top: 0;
