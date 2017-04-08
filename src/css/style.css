@@ -2034,6 +2034,7 @@
             justify-content: flex-end;
     font-size: 1.25em;
     text-decoration: none;
+    margin-top: -25px;
   }
   .resources blockquote > a > * {
     color: #343435;
@@ -2097,7 +2098,7 @@
     margin-bottom: 20px;
   }
   .what-we-know > div:last-child {
-    margin-bottom: 200px;
+    padding-bottom: 100px;
   }
 }
 @media only screen and (max-device-width: 1024px) {
