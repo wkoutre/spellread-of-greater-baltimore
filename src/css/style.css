@@ -2836,7 +2836,7 @@ button:active {
   position: fixed;
   top: 4vh;
   left: 0;
-  margin-top: 18px;
+  margin-top: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2854,4 +2854,7 @@ button:active {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   background-color: #6b7a8f;
+}
+.page-wrapper > * {
+  margin-top: 10px;
 }
