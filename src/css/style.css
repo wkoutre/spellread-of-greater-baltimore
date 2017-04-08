@@ -2518,6 +2518,7 @@ button:active {
   display: -ms-flexbox;
   display: flex;
   height: 100%;
+  width: 100vw;
   overflow-y: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -2528,7 +2529,7 @@ button:active {
 }
 .page-wrapper {
   position: fixed;
-  top: 8vh;
+  top: 9vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
