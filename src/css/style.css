@@ -2833,8 +2833,9 @@ button:active {
 }
 .page-wrapper {
   position: fixed;
-  top: 9vh;
+  top: 4vh;
   left: 0;
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
