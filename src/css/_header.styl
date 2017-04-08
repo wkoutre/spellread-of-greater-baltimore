@@ -1,46 +1,48 @@
-@media only screen and (min-device-width: 768px)    
-  .header
-  	background-color $white
-  	position fixed
-  	padding 10px 0
-  	top 0
-  	width 100vw
-  	left 0
+@media only screen and (min-device-width: 1025px)    
+	.header
+		position fixed
+		top 0
+		width 100vw
+		left 0
+		background-color $white
+	nav
+		height 100%
+		background-color $white
+		padding 5px 0
 
-  .nav-wrapper ul
-  	display flex
-  	justify-content space-around
-  	align-items center
-  	margin 0
-  	padding 0
-  	height 100%
-  		
-  	/* header links */
-  	& li
-  		font-family $heading
-  		font-size 2vmin
-  		// border 2px solid green
-  		height 4vmin
-  		display flex
-  		align-items center
-  		justify-content space-between
-  		flex 0 calc(100%/7)
-  		padding 1vmin
-  		// height 100%
-  		& a
-  			font-family $content
-  			text-decoration none
-  			display flex
-  			flex 0 1 100%
-  			justify-content center
-  			text-align center
-  			color $blue
-  			// transition all 1s
-  			&:hover
-  				font-weight bold
-  				transform scale(1.1)
-  			& img
-  				height 5vmin
+	.nav-wrapper ul
+		background-color $white
+		display flex
+		justify-content space-around
+		align-items center
+		margin 0
+		// border 2px solid green
+			
+		/* header links */
+		& li
+			font-family $heading
+			font-size 1rem
+			// border 2px solid green
+			display flex
+			align-items center
+			justify-content space-between
+			flex 0 calc(100%/7)
+			// padding 1vmin
+			// height 100%
+			& a
+				font-family $content
+				text-decoration none
+				display flex
+				flex 0 1 100%
+				justify-content center
+				text-align center
+				color $blue
+				// transition all 1s
+				&:hover
+					font-weight bold
+					transform scale(1.1)
+				& img
+					height 5vmin
 
-  .header-logo
-  	height 5%
+	.header-logo
+		height 5%

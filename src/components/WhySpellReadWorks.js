@@ -19,7 +19,7 @@ class WhySpellReadWorks extends React.Component {
     let slides = [];
     let show;
     for (let i = 0; i < 6; i++){
-    	if (screen.width > 767)
+    	if (screen.width > 1024)
     		 show = i === 0 ? "why-sr-works-content show" : "why-sr-works-content hide";
     	else
     		show = "why-sr-works-content show";

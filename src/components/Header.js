@@ -6,7 +6,7 @@ let titles = ['Home', 'What is Dyslexia?', 'Why SpellRead Works', 'Research & Me
 
 let links = ["", "dyslexia-facts", "why-spellread-works", "research-and-media", "success-stories", "parent-resources", "contact"];
 
-if (screen.width < 768){
+if (screen.width < 1025){
   titles = ['MENU', ...titles]
   links = ['menu', ...links]
 }
@@ -57,7 +57,7 @@ class Header extends React.Component {
     const navLinks = document.getElementById("nav-ul").children;
     const width = screen.width;
 
-    if (width < 768){
+    if (width < 1025){
       // give all nav links hide/show capabilities on click
       for (let i = 0; i < navLinks.length; i++){
         navLinks[i].addEventListener('click', () => showChildren());
@@ -74,7 +74,7 @@ class Header extends React.Component {
     const width = screen.width;
     let style;
 
-    if (width > 767){
+    if (width > 1025){
       title = title === 'Home' ? logo : title;
       style = `${links[i]}-header`
     } else {
@@ -101,7 +101,7 @@ class Header extends React.Component {
           <li 
             key={title}
             id="menu"
-            >MENU
+            >SITE NAVIGATION
           </li>
         )
       } else {
@@ -121,7 +121,7 @@ class Header extends React.Component {
 
   render() {
     const width = screen.width;
-    const navStyle = width < 768 ? {"height": "3.5vh"} : {"height": "auto"}
+    const navStyle = width < 1025 ? {"height": "3.5vh"} : {"height": "auto"}
     return (
       <header className="header">
         <nav role="navigation">

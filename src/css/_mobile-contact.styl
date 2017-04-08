@@ -1,52 +1,46 @@
 // need to make a landscape version...
 // also need to center the text of the button
 
-@media only screen and (max-device-width: 767px)
+@media only screen and (max-device-width: 1024px)
 	$input-style =
-		flex 1 1 25%
+		width 100%
 		font-family $content
-		font-size 2rem
+		font-size 3rem
 		border none
 		background-color $light-purple
 		border-radius 5px
 		padding 3px
+		margin 2px
 	.contact-text-pic
 		display none
 	.contact-wrapper
 		{$flex-row-wrap}
 		justify-content center
-		// align-items center
 		font-size 3rem
 		& > h1
-			display none
-			// flex 0 1 100%
-			// // border 1px solid red
-			// text-align center
+			flex 0 1 100%
+			text-align center
+			height auto
+			align-self center
 		& form
-			{$flex-row-wrap}
-			justify-content center
+			// max-height 80%
+			{$flex-col-wrap}
+			align-items center
+			// border 1px solid white
 			& > *
-				flex 0 1 90%
-				{$flex-row-wrap}
 				align-items center
+				justify-content center
+				width 100%
 				// border 1px solid red
-			& span
-				flex 0 1 49%
-				text-align right
-				margin-right 15px
-				{$heading-style}
-				font-size 0.9em
+			& > div > span
+				display none
 			& input
 				{$input-style}
-				@media only screen and (orientation: portrait)
-					height 75%
 				&:focus
 					background-color $white
 					outline none
 			& textarea
 				{$input-style}
-				flex 1 1 30%
-				height 80%
 				&:focus
 					background-color $white
 					outline none
@@ -56,8 +50,7 @@
 				{$flex-row}
 				justify-content center
 				align-items center
-				flex 0 1 50%
-				height 35px
+				flex 0 1 auto
 				margin-bottom 50px
 				& > span
 					text-align center
@@ -66,7 +59,3 @@
 					color $dark-purple
 					font-size 2.5rem
 		
-
-	.comment-box
-		height 20%
-		flex 0 1 70%

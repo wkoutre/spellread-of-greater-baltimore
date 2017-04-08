@@ -33,18 +33,18 @@ class Contact extends React.Component {
 						type="text"
 						name="firstname"
 						autoComplete="on"
-						placeholder="First name"/></div>
+						placeholder="*First name"/></div>
 					<div><span>*Last Name:</span> <input required
 						type="text" 
 						name="lastname"
 						autoComplete="on"
-						placeholder="Last name"/></div>
+						placeholder="*Last name"/></div>
 					<div><span>*Email: </span><input 
 						required 
 						type="email" 
 						name="user_email" 
 						autoComplete="on" 
-						placeholder="Email address"/></div>
+						placeholder="*Email address"/></div>
 					<div className="comment-box"><span>*Comments: </span><textarea 
 						required 
 						name="" 
@@ -52,7 +52,7 @@ class Contact extends React.Component {
 						cols="30" 
 						rows="10" 
 						maxLength="500"
-						placeholder="Enter your comments here"></textarea></div>
+						placeholder="*Enter your comments here"></textarea></div>
 					<button
 						type="submit">
 						<span>Submit</span>

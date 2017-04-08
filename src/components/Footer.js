@@ -27,7 +27,7 @@ class Footer extends React.Component {
     const footerDiv = document.getElementById("footer-div");
     const footerDivKids = footerDiv.children;
 
-    if (width < 768){
+    if (width < 1025){
       this.toggleFooterDisplay();
       for (let i = 0; i < footerDivKids.length; i++) {
         footerDivKids[i].addEventListener('click', () => showChildren());
@@ -58,7 +58,7 @@ class Footer extends React.Component {
     items = [office, fax];
   if (sectionTitle === ""){
     const width = screen.width;
-    items = width > 767 ? [copyright] : ['INFORMATION']
+    items = width > 1025 ? [copyright] : ['INFORMATION']
   }
   if (sectionTitle === "Address")
     items = [address]
