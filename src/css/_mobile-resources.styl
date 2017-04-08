@@ -2,15 +2,16 @@
 	.resources-wrapper
 		justify-content center
 	.resources
+		{$flex-row-wrap}
 		justify-content center
 		align-items center
-		flex-wrap wrap
 		align-items space-around
 		font-size 3rem
 		flex 0 1 95%
+		height 95%
 		& > *
 			flex 0 1 95%
-			margin-bottom 5vh
+			margin-bottom 20px
 		& blockquote
 			// align-self flex-start
 			{$flex-row-wrap}
@@ -59,8 +60,10 @@
 				{$link-style}
 				
 	.what-we-know
+		margin-bottom 50px
 		& > div:not(:last-child)
-			margin-bottom 5vh
+			margin-bottom 20px
 		& > div:last-child
-			margin-bottom 10vh
+			margin-bottom 20px
+		
 	

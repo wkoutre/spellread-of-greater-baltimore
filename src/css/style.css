@@ -1955,14 +1955,21 @@
             justify-content: center;
   }
   .resources {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-align: space-around;
         -ms-flex-align: space-around;
             align-items: space-around;
@@ -1970,12 +1977,13 @@
     -webkit-box-flex: 0;
         -ms-flex: 0 1 95%;
             flex: 0 1 95%;
+    height: 95%;
   }
   .resources > * {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 95%;
             flex: 0 1 95%;
-    margin-bottom: 5vh;
+    margin-bottom: 20px;
   }
   .resources blockquote {
     display: -webkit-box;
@@ -2083,11 +2091,14 @@
     cursor: pointer;
     border-bottom: 1px dashed #f7882f;
   }
+  .what-we-know {
+    margin-bottom: 50px;
+  }
   .what-we-know > div:not(:last-child) {
-    margin-bottom: 5vh;
+    margin-bottom: 20px;
   }
   .what-we-know > div:last-child {
-    margin-bottom: 10vh;
+    margin-bottom: 20px;
   }
 }
 @media only screen and (max-device-width: 1024px) {
