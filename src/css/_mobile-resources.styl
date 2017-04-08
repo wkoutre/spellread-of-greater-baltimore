@@ -1,0 +1,56 @@
+@media only screen and (max-device-width: 767px)
+	.resources-wrapper
+		justify-content center
+		align-items center
+		flex-wrap wrap
+		align-items space-around
+		font-size 3rem
+		& > *
+			flex 0 1 95%
+			margin-bottom 5vh
+		& blockquote
+			// align-self flex-start
+			{$flex-row-wrap}
+			justify-content space-between
+			align-items center
+			align-self flex-start
+			& > span
+				font-size 1em
+				flex 0 1 60%
+			& > a
+				flex 0 1 10%
+				{$flex-row}
+				cursor default
+				justify-content flex-end
+				font-size 1.2em
+				text-decoration none
+				& > *
+					// border 1px solid red
+					{$link-style}
+					text-align right
+					border none
+		& > div
+			& > h4
+				font-size 1.5em
+				margin-bottom 3vh
+				& > span
+					color $dark-purple
+			& h5
+				font-size 1.25em
+				margin-bottom 2vh
+			& ul
+				font-size 0.85em
+				margin-bottom 5vh
+				& > li
+					{$list-color-alternate}
+					padding 5px
+			& p
+				font-size 0.9em
+				line-height 1.2em
+			& a
+				{$link-style}
+				
+.what-we-know
+	& > div:not(:last-child)
+		margin-bottom 5vh
+	

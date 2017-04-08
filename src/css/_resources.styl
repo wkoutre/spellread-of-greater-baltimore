@@ -1,89 +1,90 @@
-.resources-wrapper
-	justify-content center
-	align-items center
-	flex-wrap wrap
-	align-items space-around
-	& blockquote
-		flex 0 1 90%
-		// align-self flex-start
-		display flex
-		justify-content space-between
-		align-items center
-		align-self flex-start
-		& > span
-			font-size 1.3rem
-			flex 0 1 80%
-		& a
-			flex 0 1 15vw
-			{$flex-row}
-			cursor default
-			justify-content flex-end
-			font-size 2rem
-			text-decoration none
-			& > *
-				// border 1px solid red
-				{$link-style}
-				text-align right
-				border none
-			// text-align right
-			// margin-left 5rem
-			
-.symptoms, .what-we-know
-	// border 1px solid white
-	{$flex-row-wrap}
-	flex 0 1 90%
-	height 40%
-	justify-content space-between
-	& > h4
-		flex 0 1 15vw
-		// align-self flex-start
-		align-self center
-		text-align right
-		& span
-			color $dark-purple
-		// border 1px solid gold
-		// margin-left 5rem
-	& > div
-		{$flex-col}
-		flex 0 1 36vw
-		height 100%
-		// border 1px solid green
-		
-		& > h5
-			align-self center
-			// flex 1 1 100%
-			background-color $blue
-			padding 5px
-			// border 1px solid white
-			// text-decoration underline
-			// text-decoration-style dotted
-		& > ul
-			{$flex-row-wrap}
-			height 100%
-			justify-content center
-			font-family $content
-			line-height 1.25rem
-			color $light-purple
-			align-self flex-start
-			font-size 1rem
-			overflow-y auto
-			align-self center
-			// width 95%
-		& li
-			padding 0.2rem
-			flex 0 1 95%
-			{$list-color-alternate}
-			// &:hover
-			// 	background-color $white
-			// 	color $dark-purple
-		& a
-			{$link-style}
-	
-.what-we-know
-	& p
-		overflow-y auto
-		{$flex-row-wrap}
+@media only screen and (min-device-width: 768px)
+	.resources-wrapper
 		justify-content center
-		text-align justify
-		& > span
-			flex 0 1 95%
+		align-items center
+		flex-wrap wrap
+		align-items space-around
+		& blockquote
+			flex 0 1 90%
+			// align-self flex-start
+			display flex
+			justify-content space-between
+			align-items center
+			align-self flex-start
+			& > span
+				font-size 1.3rem
+				flex 0 1 80%
+			& a
+				flex 0 1 15vw
+				{$flex-row}
+				cursor default
+				justify-content flex-end
+				font-size 2rem
+				text-decoration none
+				& > *
+					// border 1px solid red
+					{$link-style}
+					text-align right
+					border none
+				// text-align right
+				// margin-left 5rem
+				
+	.symptoms, .what-we-know
+		// border 1px solid white
+		{$flex-row-wrap}
+		flex 0 1 90%
+		height 40%
+		justify-content space-between
+		& > h4
+			flex 0 1 15vw
+			// align-self flex-start
+			align-self center
+			text-align right
+			& span
+				color $dark-purple
+			// border 1px solid gold
+			// margin-left 5rem
+		& > div
+			{$flex-col}
+			flex 0 1 36vw
+			height 100%
+			// border 1px solid green
+			
+			& > h5
+				align-self center
+				// flex 1 1 100%
+				background-color $blue
+				padding 5px
+				// border 1px solid white
+				// text-decoration underline
+				// text-decoration-style dotted
+			& > ul
+				{$flex-row-wrap}
+				height 100%
+				justify-content center
+				font-family $content
+				line-height 1.25rem
+				color $light-purple
+				align-self flex-start
+				font-size 1rem
+				overflow-y auto
+				align-self center
+				// width 95%
+			& li
+				padding 0.2rem
+				flex 0 1 95%
+				{$list-color-alternate}
+				// &:hover
+				// 	background-color $white
+				// 	color $dark-purple
+			& a
+				{$link-style}
+		
+	.what-we-know
+		& p
+			overflow-y auto
+			{$flex-row-wrap}
+			justify-content center
+			text-align justify
+			& > span
+				flex 0 1 95%

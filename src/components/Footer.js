@@ -23,7 +23,7 @@ class Footer extends React.Component {
     }
 
     const width = screen.width;
-    const height = document.getElementById("footer-div").style.height;
+    // const height = document.getElementById("footer-div").style.height;
     const footerDiv = document.getElementById("footer-div");
     const footerDivKids = footerDiv.children;
 
