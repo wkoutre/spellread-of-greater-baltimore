@@ -907,6 +907,7 @@
     box-shadow: -0.125rem 0.25rem 0.25rem #343435;
   }
   .contact-wrapper form button > span {
+    text-align: center;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 10%;
             flex: 0 1 10%;
