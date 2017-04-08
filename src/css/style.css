@@ -2093,14 +2093,11 @@
     cursor: pointer;
     border-bottom: 1px dashed #f7882f;
   }
-  .what-we-know {
-    margin-bottom: 200px;
-  }
   .what-we-know > div:not(:last-child) {
     margin-bottom: 20px;
   }
   .what-we-know > div:last-child {
-    margin-bottom: 20px;
+    margin-bottom: 200px;
   }
 }
 @media only screen and (max-device-width: 1024px) {
