@@ -1,63 +1,64 @@
-.research
-	{$flex-row-wrap}
-	justify-content center
-	align-items center
-	flex 0 1 95%
-	height 100%
-	// border 4px dashed red
-	& > button
-		{$button-style}
-		align-self flex-start
-		// position absolute
-
-.research-content
-	// border 4px dashed blue
-	{$flex-row-wrap}
-	justify-content center
-	flex 1 1 90%
-	height 75%
-	align-items flex-start
-	align-self flex-end
-	& h2
-		// border 4px dashed blue
-		text-align center
-		flex 1 1 100%
-		// align-self flex-start
-	& > div
-		flex 1 1 90%
-		display flex
+@media only screen and (min-device-width: 768px)
+	.research
+		{$flex-row-wrap}
 		justify-content center
-		height 90%
 		align-items center
-		overflow-y auto
-		// border 1px solid white
-		& div
-			// border 1px solid green
-			color $white
-			// max-height 90%
-			{$flex-col}
-			& blockquote
-				// flex 0 1 75%
-				width 85%
-				align-self center
+		flex 0 1 95%
+		height 100%
+		// border 4px dashed red
+		& > button
+			{$button-style}
+			align-self flex-start
+			// position absolute
+
+	.research-content
+		// border 4px dashed blue
+		{$flex-row-wrap}
+		justify-content center
+		flex 1 1 90%
+		height 75%
+		align-items flex-start
+		align-self flex-end
+		& h2
+			// border 4px dashed blue
+			text-align center
+			flex 1 1 100%
+			// align-self flex-start
+		& > div
+			flex 1 1 90%
+			display flex
+			justify-content center
+			height 90%
+			align-items center
+			overflow-y auto
+			// border 1px solid white
+			& div
 				// border 1px solid green
-				font-size 2.1rem
-				padding 2rem
-				font-family $content
-				// text-align justify
-			& a
-				{$link-style}
-				font-family $heading
-		& > img
-			border-radius 5px
-			border 2px solid $dark-purple
-			max-height 92%
-			max-width 92%
-			
-			// max-width 95%
-			// max-height 95%
-			box-shadow -0.5rem 0.5rem 1rem $dark-purple
-		& > iframe
-			border-radius 5px
-			flex 0 1 (35vh * 16/9)
-			height 35vh
+				color $white
+				// max-height 90%
+				{$flex-col}
+				& blockquote
+					// flex 0 1 75%
+					width 85%
+					align-self center
+					// border 1px solid green
+					font-size 2.1rem
+					padding 2rem
+					font-family $content
+					// text-align justify
+				& a
+					{$link-style}
+					font-family $heading
+			& > img
+				border-radius 5px
+				border 2px solid $dark-purple
+				max-height 92%
+				max-width 92%
+				
+				// max-width 95%
+				// max-height 95%
+				box-shadow -0.5rem 0.5rem 1rem $dark-purple
+			& > iframe
+				border-radius 5px
+				flex 0 1 (35vh * 16/9)
+				height 35vh
