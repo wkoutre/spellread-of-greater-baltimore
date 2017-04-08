@@ -2530,6 +2530,7 @@ button:active {
 .page-wrapper {
   position: fixed;
   top: 9vh;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
