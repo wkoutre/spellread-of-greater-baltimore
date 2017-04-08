@@ -1822,6 +1822,7 @@
     box-shadow: -0.125rem 0.25rem 0.25rem #343435;
   }
   .research-content {
+    margin-top: -25px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1875,13 +1876,13 @@
     -webkit-box-flex: 0;
         -ms-flex: 0 1 90%;
             flex: 0 1 90%;
-    max-height: 62.5vh;
+    max-height: 60vh;
   }
   .research-content > div > iframe {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 90%;
             flex: 0 1 90%;
-    height: 62.5vh;
+    height: 60vh;
   }
   .research-content > div > div {
     -webkit-box-flex: 0;
