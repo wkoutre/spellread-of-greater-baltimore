@@ -13,10 +13,8 @@ const DyslexiaFacts = (props) => {
           transitionLeaveTimeout={500}
           className="page-wrapper dyslexia-facts-wrapper">
 			{whatDoYouKnow}
-			<div className="vertical-line"></div>
 			{signsAndIndicators}
 			{readingIsntDifficult}
-			<div className="vertical-line"></div>
 			{progress}
 		</CSSTransitionGroup>
 	)

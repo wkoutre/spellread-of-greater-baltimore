@@ -3,9 +3,10 @@
 		{$flex-row-wrap}
 		justify-content space-around
 		align-items center
-		width 90%
+		flex 0 1 90%
 		& > div
 			// border 1px solid white
+			flex 0 1 45%
 			height 47.5%
 			{$flex-row-wrap}
 			justify-content center
@@ -15,11 +16,11 @@
 		& h4
 			text-align center
 			flex 0 1 100%
-			height 15%
 			& > span
 				color $dark-purple
 		& ul, p
 			overflow-y auto
+			flex 0 1 100%
 			height 75%
 			& li
 				flex 0 1 100%
