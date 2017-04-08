@@ -827,7 +827,6 @@
     background-color: #dedcea;
     border-radius: 5px;
     padding: 3px;
-    height: 50%;
   }
   .contact-wrapper form input:focus {
     background-color: #f7f6f2;
@@ -968,10 +967,14 @@
     margin-bottom: 10px;
   }
   .dyslexia-facts-wrapper > div ul {
-    font-size: 0.8em;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    font-size: 1em;
   }
   .dyslexia-facts-wrapper > div li {
     padding: 5px;
+    text-align: center;
   }
   .dyslexia-facts-wrapper > div li:nth-child(odd) {
     background-color: #dedcea;
@@ -985,9 +988,8 @@
     color: #28276d;
   }
   .dyslexia-facts-wrapper > div p {
-    font-size: 0.9em;
+    font-size: 1em;
     line-height: 1.2em;
-    text-align: justify;
   }
   .dyslexia-facts-wrapper > div button {
     -webkit-box-flex: 1;
@@ -1035,7 +1037,7 @@
   .dyslexia-facts-wrapper > div button > a {
     font-family: Cormorant;
     text-decoration: none;
-    font-size: 2em;
+    font-size: 3em;
   }
   .what-do-you-know {
     -webkit-box-ordinal-group: 2;
@@ -2686,6 +2688,11 @@
             order: 10;
     text-align: center;
     color: #f7f6f2;
+  }
+}
+@media only screen and (max-device-width: 767px) and (orientation: portrait) {
+  input {
+    height: 75%;
   }
 }
 @media only screen and (max-device-width: 767px) and (max-device-width: 767px) and (orientation: landscape) {

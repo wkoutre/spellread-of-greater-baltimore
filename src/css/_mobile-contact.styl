@@ -1,3 +1,6 @@
+// need to make a landscape version...
+// also need to center the text of the button
+
 @media only screen and (max-device-width: 767px)
 	$input-style =
 		flex 1 1 25%
@@ -35,7 +38,8 @@
 				font-size 0.9em
 			& input
 				{$input-style}
-				height 50%
+				@media only screen and (orientation: portrait)
+					height 75%
 				&:focus
 					background-color $white
 					outline none
