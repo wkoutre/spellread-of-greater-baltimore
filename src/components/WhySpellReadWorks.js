@@ -17,8 +17,12 @@ class WhySpellReadWorks extends React.Component {
 
   componentDidMount() {
     let slides = [];
+    let show;
     for (let i = 0; i < 6; i++){
-      const show = i === 0 ? "why-sr-works-content show" : "why-sr-works-content hide";
+    	if (screen.width > 767)
+    		 show = i === 0 ? "why-sr-works-content show" : "why-sr-works-content hide";
+    	else
+    		show = "why-sr-works-content show";
       const content = dataArray[i];
       const match = content.match(/(png)|(svg)/);   
       const header = headerArray[i];
@@ -46,7 +50,7 @@ class WhySpellReadWorks extends React.Component {
     /* update this with PNGs... or learn how to use SVG */
     const localCurrent = this.state.current + 1;
     let element = document.getElementById(`why-sr-works-${this.state.current}`);
-    element.className += "show";
+    element.className += " show";
 
     this.setState({
           current: localCurrent
