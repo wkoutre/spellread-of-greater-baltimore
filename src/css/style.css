@@ -1937,6 +1937,11 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .resources {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1946,14 +1951,17 @@
         -ms-flex-align: space-around;
             align-items: space-around;
     font-size: 3rem;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 95%;
+            flex: 0 1 95%;
   }
-  .resources-wrapper > * {
+  .resources > * {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 95%;
             flex: 0 1 95%;
     margin-bottom: 5vh;
   }
-  .resources-wrapper blockquote {
+  .resources blockquote {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1972,7 +1980,7 @@
         align-self: flex-start;
     margin: 20px 0 35px 0;
   }
-  .resources-wrapper blockquote > span {
+  .resources blockquote > span {
     margin-top: 10px;
     text-align: center;
     font-style: italic;
@@ -1981,7 +1989,7 @@
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
   }
-  .resources-wrapper blockquote > a {
+  .resources blockquote > a {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 20%;
             flex: 0 1 20%;
@@ -2001,7 +2009,7 @@
     font-size: 1.25em;
     text-decoration: none;
   }
-  .resources-wrapper blockquote > a > * {
+  .resources blockquote > a > * {
     color: #343435;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
@@ -2010,43 +2018,43 @@
     border-bottom: 1px dashed #343435;
     text-align: center;
   }
-  .resources-wrapper blockquote > a > *:hover {
+  .resources blockquote > a > *:hover {
     color: #f7882f;
     cursor: pointer;
     border-bottom: 1px dashed #f7882f;
   }
-  .resources-wrapper > div > h4 {
+  .resources > div > h4 {
     text-align: center;
     font-size: 1.4em;
     margin-bottom: 35px;
   }
-  .resources-wrapper > div > h4 > span {
+  .resources > div > h4 > span {
     color: #28276d;
   }
-  .resources-wrapper > div h5 {
+  .resources > div h5 {
     font-size: 1.25em;
     margin-bottom: 15px;
   }
-  .resources-wrapper > div ul {
+  .resources > div ul {
     font-size: 1em;
     margin-bottom: 35px;
   }
-  .resources-wrapper > div ul > li {
+  .resources > div ul > li {
     padding: 5px;
   }
-  .resources-wrapper > div ul > li:nth-child(odd) {
+  .resources > div ul > li:nth-child(odd) {
     background-color: #dedcea;
     color: #6b7a8f;
   }
-  .resources-wrapper > div ul > li:nth-child(even) {
+  .resources > div ul > li:nth-child(even) {
     background-color: #6b7a8f;
     color: #dedcea;
   }
-  .resources-wrapper > div p {
+  .resources > div p {
     font-size: 1em;
     line-height: 1.2em;
   }
-  .resources-wrapper > div a {
+  .resources > div a {
     color: #343435;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
@@ -2054,7 +2062,7 @@
     text-decoration: none;
     border-bottom: 1px dashed #343435;
   }
-  .resources-wrapper > div a:hover {
+  .resources > div a:hover {
     color: #f7882f;
     cursor: pointer;
     border-bottom: 1px dashed #f7882f;
@@ -3186,6 +3194,13 @@ button:active {
     height: 86vh;
   }
 }
-.page-wrapper > * {
-  margin-top: 20px;
+@media only screen and (min-device-width: 1025px) {
+  .page-wrapper > * {
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-device-width: 1024px) {
+  .page-wrapper > * {
+    margin-top: 10px;
+  }
 }
