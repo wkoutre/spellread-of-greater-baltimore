@@ -1753,8 +1753,8 @@
   .research {
     height: 90%;
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 100%;
-            flex: 0 1 100%;
+        -ms-flex: 0 1 95%;
+            flex: 0 1 95%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
