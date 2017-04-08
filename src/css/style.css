@@ -844,6 +844,7 @@
             justify-content: center;
     height: 40px;
     margin-top: 30px;
+    margin-bottom: 30px;
   }
   .dyslexia-facts-wrapper > div button > * {
     -webkit-box-flex: 1;
@@ -1306,7 +1307,7 @@
 }
 @media only screen and (max-device-width: 767px) {
   .research-wrapper {
-    margin-bottom: 5vh;
+    margin-bottom: 15vh;
   }
   .research {
     height: 100%;
@@ -1582,9 +1583,6 @@
   }
 }
 @media only screen and (max-device-width: 767px) {
-  .why-spellread-works-wrapper {
-    margin-bottom: 5vh;
-  }
   .why-spellread-works {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1645,6 +1643,7 @@
     text-align: justify;
     font-size: 1em;
     line-height: 1.3em;
+    padding-bottom: 20px;
   }
   .why-spellread-works > div:first-child h5 {
     margin-top: 0;
@@ -2509,6 +2508,7 @@ button:active {
 #root {
   background-color: #6b7a8f;
   position: fixed;
+  height: 100vh;
   min-width: 100vw;
   max-width: 100vw;
 /* REACT-ROOT DIV */
@@ -2517,7 +2517,7 @@ button:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
+  height: 100%;
   overflow-y: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -2540,6 +2540,9 @@ button:active {
       -ms-flex: 1 1 100%;
           flex: 1 1 100%;
   height: 80%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   background-color: #6b7a8f;
