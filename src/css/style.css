@@ -1094,7 +1094,7 @@
     font-size: 1em;
     line-height: 1.2em;
   }
-  .dyslexia-facts > div button {
+  .dyslexia-facts > div > button {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
@@ -1119,27 +1119,26 @@
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 30px;
-    margin-bottom: 50px;
     font-size: 0.8em;
   }
-  .dyslexia-facts > div button > * {
+  .dyslexia-facts > div > button > * {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
     text-align: center;
   }
-  .dyslexia-facts > div button:hover,
-  .dyslexia-facts > div button:active {
+  .dyslexia-facts > div > button:hover,
+  .dyslexia-facts > div > button:active {
     cursor: pointer;
     opacity: 0.9;
     box-shadow: -0.175rem 0.375rem 0.375rem #343435;
   }
-  .dyslexia-facts > div button:active {
+  .dyslexia-facts > div > button:active {
     -webkit-transform: translateY(2px);
             transform: translateY(2px);
     box-shadow: -0.125rem 0.25rem 0.25rem #343435;
   }
-  .dyslexia-facts > div button > a {
+  .dyslexia-facts > div > button > a {
     font-family: Cormorant;
     text-decoration: none;
   }
@@ -3065,6 +3064,11 @@
             order: 10;
     text-align: center;
     color: #f7f6f2;
+  }
+}
+@media only screen and (max-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) {
+  button {
+    margin-bottom: 100px;
   }
 }
 @media only screen and (max-device-width: 1024px) and (max-device-width: 1024px) and (orientation: landscape) {

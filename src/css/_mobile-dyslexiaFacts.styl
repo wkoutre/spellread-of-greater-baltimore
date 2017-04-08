@@ -8,6 +8,7 @@
 		justify-content center
 		align-items space-around
 		height 95%
+		// margin-bottom 25px
 		& > div
 			flex 0 1 90%
 			margin-bottom 20px
@@ -31,11 +32,13 @@
 				font-size 1em
 				line-height 1.2em
 				// text-align justify
-			& button
+			& > button
 				flex 1
 				{$button-style}
 				margin-top 30px
-				margin-bottom 50px
+				// margin-bottom 50px
+				@media only screen and (max-device-width: 1024px) and (orientation: portrait)
+					margin-bottom 100px
 				font-size 0.8em
 				& > a
 					font-family $content
