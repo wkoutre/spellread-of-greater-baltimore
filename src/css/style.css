@@ -790,15 +790,13 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 3rem;
   }
-  .contact-wrapper > h1 {
-    display: none;
-  }
   .contact-form {
+    max-height: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -808,12 +806,12 @@
             flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-align: space-around;
-        -ms-flex-align: space-around;
-            align-items: space-around;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 90%;
   }
   .contact-form > * {
     width: 100%;
@@ -822,6 +820,19 @@
     display: none;
   }
   .contact-form > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 5%;
             flex: 0 1 5%;
@@ -3056,6 +3067,11 @@
             order: 10;
     text-align: center;
     color: #f7f6f2;
+  }
+}
+@media only screen and (max-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) {
+  h1 {
+    display: none;
   }
 }
 @media only screen and (max-device-width: 1024px) and (max-device-width: 1024px) and (orientation: landscape) {

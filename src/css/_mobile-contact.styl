@@ -16,19 +16,17 @@
 	.contact-wrapper
 		{$flex-row-wrap}
 		justify-content center
-		align-items flex-start
+		align-items center
 		font-size 3rem
 		& > h1
-			display none
-			// flex 0 1 100%
-			// text-align center
-			// height auto
-			// align-self center
-			// margin 0
+			@media only screen and (max-device-width: 1024px) and (orientation: portrait)
+				display none
 	.contact-form
+		max-height 90%
 		{$flex-col-wrap}
-		align-items space-around
-		justify-content center
+		align-items center
+		justify-content space-around
+		width 90%
 		// border 1px solid white
 		& > *
 			width 100%
@@ -36,6 +34,9 @@
 		& > div > span
 			display none
 		& > div
+			{$flex-row-wrap}
+			justify-content center
+			width 100%
 			flex 0 1 5%
 			margin 2px
 		& input, textarea
