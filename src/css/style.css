@@ -1383,7 +1383,7 @@
     -webkit-box-flex: 0;
         -ms-flex: 0 1 90%;
             flex: 0 1 90%;
-    height: 90%;
+    height: 80%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1400,6 +1400,8 @@
     -webkit-box-align: space-around;
         -ms-flex-align: space-around;
             align-items: space-around;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
   .landing > blockquote {
     font-size: 0.9em;
@@ -1457,8 +1459,8 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
   }
   .landing > a > span {
     color: #343435;
