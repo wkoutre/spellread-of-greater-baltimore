@@ -1479,7 +1479,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 5vh;
+    height: 100%;
   }
   .success-wrapper > button {
     font-family: Cormorant;
@@ -1505,10 +1505,11 @@
         -ms-flex: 0 1 75%;
             flex: 0 1 75%;
     font-size: 3rem;
-    -ms-flex: 0 1 65%;
-        flex: 0 1 65%;
-    margin: 5vh 0;
+    margin: 5vh 0 10vh 0;
     height: 10vh;
+    -webkit-box-ordinal-group: 11;
+        -ms-flex-order: 10;
+            order: 10;
   }
   .success-wrapper > button > * {
     -webkit-box-flex: 1;
