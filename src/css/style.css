@@ -2508,7 +2508,7 @@ button:active {
 #root {
   background-color: #6b7a8f;
   position: fixed;
-  height: 100vh;
+  height: 110vh;
   min-width: 100vw;
   max-width: 100vw;
 /* REACT-ROOT DIV */
