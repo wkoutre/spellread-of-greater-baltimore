@@ -3,11 +3,12 @@
 		height 100%
 		{$flex-row-wrap}
 		justify-content center
-		font-size 2.5rem
+		font-size 2.7rem
 		@media screen and (orientation: landscape)
 			font-size 2.75rem
 		& > button
 			{$button-style}
+			align-self flex-start
 			flex 0 1 75%
 			font-size 0.9em
 			height 35px
@@ -25,7 +26,7 @@
 			font-size 1.35em
 		& > div
 			flex 0 1 90%
-			height 100%
+			// height 100%
 			{$flex-row-wrap}
 			align-items center
 			justify-content center
@@ -48,7 +49,7 @@
 						{$link-style}
 						font-family $heading
 				& > blockquote
-					flex 0 1 80%
+					flex 0 1 90%
 					font-size 0.9em
 					
 				// > * are the children... finally
