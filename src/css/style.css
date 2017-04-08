@@ -1205,15 +1205,17 @@
     -webkit-box-flex: 0;
         -ms-flex: 0 1 90%;
             flex: 0 1 90%;
+    height: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     font-size: 3.5rem;
+    -webkit-box-align: space-around;
+        -ms-flex-align: space-around;
+            align-items: space-around;
   }
   .landing > blockquote {
-    font-size: 1em;
-    -ms-flex-item-align: center;
-        align-self: center;
+    font-size: 0.9em;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 90%;
             flex: 0 1 90%;
@@ -1229,8 +1231,12 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     text-align: center;
-    height: 80%;
+    min-height: 70%;
+    max-height: 80%;
     color: #f7f6f2;
   }
   .landing > blockquote > cite {
@@ -1268,6 +1274,10 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 20%;
   }
   .landing > a > span {
     -webkit-box-flex: 0;
@@ -2151,5 +2161,6 @@ button:active {
   display: -ms-flexbox;
   display: flex;
   overflow-y: auto;
+  overflow-scrolling: touch;
   background-color: #6b7a8f;
 }

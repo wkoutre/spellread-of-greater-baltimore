@@ -3,17 +3,20 @@
 		justify-content center
 	.landing
 		flex 0 1 90%
+		height 100%
 		{flex-row-wrap}
 		justify-content center
 		font-size 3.5rem
+		align-items space-around
 		& > blockquote
-			font-size 1em
-			align-self center
+			font-size 0.9em
 			flex 0 1 90%
 			{$flex-row-wrap}
 			justify-content center
+			align-items flex-end
 			text-align center
-			height 80%
+			min-height 70%
+			max-height 80%
 			color $white
 			// border 1px solid white
 			& > cite
@@ -29,6 +32,8 @@
 			// border 1px solid white
 			{$flex-row}
 			justify-content center
+			align-items center
+			height 20%
 			& > span
 				flex 0 1 10%
 				{$link-style}
