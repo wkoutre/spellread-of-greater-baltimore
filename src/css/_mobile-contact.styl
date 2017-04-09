@@ -1,3 +1,45 @@
 @media only screen and (max-device-width: 1024px)
 	.contact-wrapper
+		justify-content center
+		align-items center
+		font-size 3rem
+	.contact
+		flex 0 1 95%
+		{$flex-row-wrap}
+		align-items space-around
+		justify-content center
+		& > h1
+			// align-self flex-start
+			flex 0 1 100%
+			text-align center
+	.contact-text-pic
 		display none
+	.contact-form
+		flex 0 1 90%
+		{$flex-row-wrap}
+		justify-content center
+		& > div
+			flex 0 1 100%
+			{$flex-row-wrap}
+			justify-content space-between
+			// border 1px solid white
+			margin 10px
+			min-height 10%
+			& > span
+				font-size 0.8em
+				font-family $content
+				flex 0 1 35%
+				color: $white
+				align-self center
+				text-align right
+			& > input,
+			& > textarea
+				flex 0 1 55%
+				background-color $light-purple
+				border none
+				border-radius 5px
+				padding 3px
+		& > button
+			{$button-style}
+			font-size 0.7em
+				
