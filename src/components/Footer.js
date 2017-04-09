@@ -1,6 +1,7 @@
 import React from 'react';
 import MyLink from './MyLink';
 import { facebook, linkedin, sections, address, office, fax, copyright, linkInfo } from './content/_footer';
+const isMobile = navigator.userAgent.search(/mobile/i) > -1
 
 class Footer extends React.Component {
 
@@ -26,8 +27,9 @@ class Footer extends React.Component {
     // const height = document.getElementById("footer-div").style.height;
     const footerDiv = document.getElementById("footer-div");
     const footerDivKids = footerDiv.children;
+    // const mobile = navigator.userAgent.search(/mobile/i);
 
-    if (width < 1025){
+    if (isMobile){
       this.toggleFooterDisplay();
       for (let i = 0; i < footerDivKids.length; i++) {
         footerDivKids[i].addEventListener('click', () => showChildren());
@@ -58,7 +60,7 @@ class Footer extends React.Component {
     items = [office, fax];
   if (sectionTitle === ""){
     const width = screen.width;
-    items = width > 1025 ? [copyright] : ['INFORMATION']
+    items = !isMobile ? [copyright] : ['INFORMATION']
   }
   if (sectionTitle === "Address")
     items = [address]

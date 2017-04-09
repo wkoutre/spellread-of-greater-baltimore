@@ -1,4 +1,4 @@
-@media only screen and (max-device-width: 1024px)
+@media only screen and (max-device-width: 1366px)
 	.contact-wrapper
 		justify-content center
 		align-items flex-start
@@ -32,9 +32,10 @@
 				color: $white
 				align-self center
 				text-align right
+				// border 1px solid white
 			& > input,
 			& > textarea
-				flex 0 1 60%
+				flex 0.5 1 60%
 				background-color $light-purple
 				border none
 				border-radius 5px
@@ -47,15 +48,14 @@
 			margin-top 20px
 			font-size 0.75em
 				
-@media only screen and (max-device-width: 1024px) and (orientation: landscape)
+@media only screen and (max-device-width: 1366px) and (orientation: landscape)
 	.contact-form
 		& > button
 			margin-bottom 50px
 		& > div
 			flex 0 1 100%
 			{$flex-row-wrap}
+			// border 1px solid white
 			& > span
-				flex 0 1 17.5%
-			& > input,
-			& > textarea
-				flex 0.5 1 60%
+				flex 0 1 25%
+				// border 1px solid white

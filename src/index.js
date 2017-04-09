@@ -45,15 +45,54 @@ const PathRendered = (props) => {
 	const Comp = componentFinder(pageName);
 	
 	return (
-		<div>
-			<Header />
 			<Comp />
-			<Footer />	
-		</div>
 	)
 }
 
 class Root extends React.Component {
+
+	// toggleHeaderDisplay = () => {
+	// 	const navLinks = document.getElementById("nav-ul").children;
+
+	// 	for (let i = 1; i < navLinks.length; i++){
+	// 		navLinks[i].style.display = navLinks[i].style.display === 'none' ? 'flex' : 'none';
+	// 	}
+	// }
+
+	// mobileCheck = () => {
+	// 	console.log('bro, changing orientation!');
+	// 	const showChildren = () => {
+	// 		const navUl = document.getElementById("nav-ul");
+	// 		const height = document.getElementById("nav-ul").style.height;
+	// 		const navLinks = document.getElementById("nav-ul").children;
+
+	// 		if (navLinks[1].style.display === 'none')
+	// 			setTimeout(this.toggleHeaderDisplay, 300);
+	// 		else
+	// 			this.toggleHeaderDisplay();
+
+	// 		 if (height !== '75vh')
+	// 			navUl.style.height = '75vh';
+	// 		 else
+	// 			navUl.style.height = '3.5vh';
+	// 		// console.log('classList', navUl.classList);
+	// 	}
+		
+	// 	const navLinks = document.getElementById("nav-ul").children;
+	// 	const width = screen.width;
+
+	// 	if (width < 1025) {
+	// 		// give all nav links hide/show capabilities on click
+	// 		for (let i = 0; i < navLinks.length; i++) {
+	// 			navLinks[i].addEventListener('click', () => showChildren());
+	// 			// hide all children but the MENU 
+	// 			if (i > 0) {
+	// 				navLinks[i].style.display = 'none';
+	// 			}
+	// 		}
+	// 	}
+	// }
+
 	toggleFullScreen = () => {
 		  var doc = window.document;
 		  var docEl = doc.documentElement;
@@ -71,11 +110,14 @@ class Root extends React.Component {
 
 	render() {
     		document.addEventListener("touchstart", function(){}, true);
-    		// this.toggleFullScreen();
 
 		return (
 			<BrowserRouter>
-				<Route path="/:pageName?" render={PathRendered}/>
+				<div>
+					<Header />
+					<Route path="/:pageName?" render={PathRendered}/>
+					<Footer />
+				</div>
 			</BrowserRouter>
 		)
 	}

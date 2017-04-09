@@ -5,6 +5,8 @@ import CSSTransitionGroup from 'react-addons-css-transition-group';
 // import Footer from './Footer';
 import {headerArray, dataArray, buttonArray } from './content/_why_spellread_works_content';
 
+const isMobile = navigator.userAgent.search(/mobile/i) > -1;
+
 
 class WhySpellReadWorks extends React.Component {
   constructor() {
@@ -19,7 +21,7 @@ class WhySpellReadWorks extends React.Component {
     let slides = [];
     let show;
     for (let i = 0; i < 6; i++){
-    	if (screen.width > 1024)
+    	if (!isMobile)
     		 show = i === 0 ? "why-sr-works-content show" : "why-sr-works-content hide";
     	else
     		show = "why-sr-works-content show";
