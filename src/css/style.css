@@ -852,7 +852,7 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin: 10px;
+    margin: 5px;
     min-height: 12.5%;
   }
   .contact-form > div > span {
