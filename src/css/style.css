@@ -924,6 +924,31 @@
   .contact-form > button {
     margin-bottom: 50px;
   }
+  .contact-form > div {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .contact-form > div > span {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 17.5%;
+            flex: 0 1 17.5%;
+  }
+  .contact-form > div > input,
+  .contact-form > div > textarea {
+    -webkit-box-flex: 0.9;
+        -ms-flex: 0.9 1 60%;
+            flex: 0.9 1 60%;
+  }
 }
 @media only screen and (max-device-width: 1024px) {
   .dyslexia-facts-wrapper {
