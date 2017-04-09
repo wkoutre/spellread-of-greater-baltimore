@@ -920,6 +920,11 @@
     box-shadow: -0.125rem 0.25rem 0.25rem #343435;
   }
 }
+@media only screen and (max-device-width: 1024px) and (orientation: landscape) {
+  .contact-form > button {
+    margin-bottom: 100px;
+  }
+}
 @media only screen and (max-device-width: 1024px) {
   .dyslexia-facts-wrapper {
     -webkit-box-align: center;
