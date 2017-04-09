@@ -50,7 +50,8 @@ class WhySpellReadWorks extends React.Component {
     /* update this with PNGs... or learn how to use SVG */
     const localCurrent = this.state.current + 1;
     let element = document.getElementById(`why-sr-works-${this.state.current}`);
-    element.className += " show";
+    element.classList.remove("hide");
+    element.classList.add("show");
 
     this.setState({
           current: localCurrent

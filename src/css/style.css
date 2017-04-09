@@ -305,6 +305,9 @@
     font-size: 1rem;
     line-height: 1.75rem;
     color: #dedcea;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 90%;
+            flex: 0 1 90%;
   }
   .dyslexia-facts h4 {
     text-align: center;
@@ -323,24 +326,34 @@
             flex: 0 1 100%;
     height: 75%;
   }
-  .dyslexia-facts ul li,
-  .dyslexia-facts p li {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 100%;
-            flex: 0 1 100%;
+  .dyslexia-facts ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .dyslexia-facts ul li:nth-child(odd),
-  .dyslexia-facts p li:nth-child(odd) {
+  .dyslexia-facts ul > li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 95%;
+            flex: 0 1 95%;
+  }
+  .dyslexia-facts ul > li:nth-child(odd) {
     background-color: #dedcea;
     color: #6b7a8f;
   }
-  .dyslexia-facts ul li:nth-child(even),
-  .dyslexia-facts p li:nth-child(even) {
+  .dyslexia-facts ul > li:nth-child(even) {
     background-color: #6b7a8f;
     color: #dedcea;
   }
-  .dyslexia-facts ul > span,
-  .dyslexia-facts p > span {
+  .dyslexia-facts ul > span {
     color: #28276d;
     font-weight: bold;
   }
@@ -397,7 +410,21 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .reading-isnt-difficult > button a {
+  .reading-isnt-difficult > button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .reading-isnt-difficult > button > a {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
     border: none;
     text-decoration: none;
     font-size: 1rem;
@@ -658,7 +685,7 @@
             transform: scale(1.1);
   }
   .nav-wrapper ul li a img {
-    height: 5vmin;
+    height: 4vmin;
   }
   .header-logo {
     height: 5%;
@@ -2591,6 +2618,7 @@
     -webkit-box-flex: 0;
         -ms-flex: 0 1 36vw;
             flex: 0 1 36vw;
+    height: 100%;
   }
   .symptoms > div > h5,
   .what-we-know > div > h5 {
@@ -3157,13 +3185,12 @@ button:active {
     height: 86vh;
   }
 }
-@media only screen and (min-device-width: 1025px) {
-  .page-wrapper > * {
-    margin-top: 20px;
-  }
+.page-wrapper > * {
+  margin-top: 30px;
 }
-@media only screen and (max-device-width: 1024px) {
-  .page-wrapper > * {
-    margin-top: 10px;
-  }
+.hide {
+  opacity: 0;
+}
+.show {
+  opacity: 1;
 }

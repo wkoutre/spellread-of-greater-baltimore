@@ -37,11 +37,20 @@ class SuccessStories extends React.Component {
 		})
 	}
 
+  scrollToTop = () => {
+    const successWrapper = document.getElementsByClassName("success-wrapper");
+    const successContent = document.getElementsByClassName("success-content");
+    successWrapper[0].scrollTop = successContent[0].scrollHeight;
+
+    const smoothScroll = () => {
+      // console.log('hello');
+      successWrapper[0].scrollTop -= 50;
+    }
+    let stop = setInterval(smoothScroll, 1);
+    setTimeout(() => clearInterval(stop), 400);
+  }
+
 	changeStories = () => {
-		// const name1 = this.state.names[this.state.current],
-		// 		name2 = this.state.names[this.state.current + 1],
-		// 		story1 = this.state.stories[this.state.current],
-		// 		story2 = this.state.stories[this.state.current + 1]
 		let names = [], stories = [];
 		let newCurrent = this.state.current;
 
@@ -58,6 +67,8 @@ class SuccessStories extends React.Component {
 			currentNames: names,
 			currentStories: stories
 		})
+
+    this.scrollToTop();
 	}
 
 	render() {
@@ -90,7 +101,3 @@ class SuccessStories extends React.Component {
 }
 
 export default SuccessStories;
-
-// 3 columns of success stories per page with an clickable arrow to load in 3 more
-// There are 14 total so... don't forget to account for the end of the cycle, letting the user know it's about to start over
-// Also the option to view them all at once on a separate page
