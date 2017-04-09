@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../css/images/spell-read-logo.png';
+import { footerDisplayOff, headerDisplayOff } from './helpers'
 
 let titles = ['Home', 'What is Dyslexia?', 'Why SpellRead Works', 'Research & Media', 'Success Stories', 'Parent Resources', 'Contact'];
 
@@ -39,34 +40,31 @@ class Header extends React.Component {
 	}
 
 	mobileCheck = () => {
-		console.log(`running mobile check`);
 		const showChildren = () => {
 			const navUl = document.getElementById("nav-ul");
 			const height = document.getElementById("nav-ul").style.height;
 			const navLinks = document.getElementById("nav-ul").children;
 
-			if (navLinks[1].style.display === 'none')
+			if (navLinks[1].style.display === 'none'){
 				setTimeout(this.toggleHeaderDisplay, 300);
-			else
+			}
+			else {
 				this.toggleHeaderDisplay();
-
-			 if (height !== '75vh')
-				navUl.style.height = '75vh';
-			 else
-				navUl.style.height = '3.5vh';
-			// console.log('classList', navUl.classList);
+			}
+			
+			 navUl.style.height = height !== '75vh' ? '75vh' : '3.5vh';
 		}
 		
 		const navLinks = document.getElementById("nav-ul").children;
-		const width = screen.width;
-		const mobile = navigator.userAgent.search(/mobile/i);
 
 		if (isMobile) {
 			// give all nav links hide/show capabilities on click
 			for (let i = 0; i < navLinks.length; i++){
 				navLinks[i].addEventListener('click', showChildren);
+				navLinks[i].addEventListener('click', footerDisplayOff);
+
 				// hide all children but the MENU 
-				if (i > 0){
+				if (i > 0) {
 					navLinks[i].style.display = 'none';
 					// navLinks[i].style.opacity = 0;
 				}
@@ -76,11 +74,9 @@ class Header extends React.Component {
 
 	componentDidMount() {
 		this.mobileCheck();
-		// window.addEventListener('orientationchange', this.mobileCheck);
 	}
 
 	linkMaker = (title, i) => {
-		const width = screen.width;
 		let style;
 
 		if (!isMobile){
@@ -97,9 +93,8 @@ class Header extends React.Component {
 			key={title}
 			>
 				<Link
-				className={style}
 				to={`/${links[i]}`}
-				>{title}
+				><span className={style}>{title}</span>
 				</Link>
 			</li>
 			)
@@ -119,9 +114,8 @@ class Header extends React.Component {
 					key={title}
 					>
 						<Link
-						className={style}
 						to={`/${links[i]}`}
-						>{title}</Link>
+						><span className={style}>{title}</span></Link>
 					</li>
 				)
 			}
@@ -129,7 +123,6 @@ class Header extends React.Component {
 	}
 
 	render() {
-		const width = screen.width;
 		const navStyle = isMobile ? {"height": "3.5vh"} : {"height": "auto"}
 		return (
 			<header className="header">

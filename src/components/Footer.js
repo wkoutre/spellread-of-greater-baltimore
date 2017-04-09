@@ -1,6 +1,7 @@
 import React from 'react';
 import MyLink from './MyLink';
 import { facebook, linkedin, sections, address, office, fax, copyright, linkInfo } from './content/_footer';
+import { headerDisplayOff } from './helpers'
 const isMobile = navigator.userAgent.search(/mobile/i) > -1
 
 class Footer extends React.Component {
@@ -17,22 +18,18 @@ class Footer extends React.Component {
       else
         this.toggleFooterDisplay();
 
-       if (height !== '75vh')
-        footerDiv.style.height = '75vh';
-       else
-        footerDiv.style.height = '5.5vh';
+       footerDiv.style.height = height !== '75vh' ? '75vh' : '5.5vh'
+
     }
 
-    const width = screen.width;
-    // const height = document.getElementById("footer-div").style.height;
     const footerDiv = document.getElementById("footer-div");
     const footerDivKids = footerDiv.children;
-    // const mobile = navigator.userAgent.search(/mobile/i);
 
     if (isMobile){
       this.toggleFooterDisplay();
       for (let i = 0; i < footerDivKids.length; i++) {
-        footerDivKids[i].addEventListener('click', () => showChildren());
+        footerDivKids[i].addEventListener('click', showChildren);
+        footerDivKids[i].addEventListener('click', headerDisplayOff);
         // hide all children but the INFO
         if (i < footerDivKids.length - 1){
           footerDivKids[i].style.display = 'none';
@@ -59,7 +56,6 @@ class Footer extends React.Component {
   if (sectionTitle === "Contact")
     items = [office, fax];
   if (sectionTitle === ""){
-    const width = screen.width;
     items = !isMobile ? [copyright] : ['INFORMATION']
   }
   if (sectionTitle === "Address")
