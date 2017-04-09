@@ -945,9 +945,9 @@
   }
   .contact-form > div > input,
   .contact-form > div > textarea {
-    -webkit-box-flex: 0.9;
-        -ms-flex: 0.9 1 60%;
-            flex: 0.9 1 60%;
+    -webkit-box-flex: 0.7;
+        -ms-flex: 0.7 1 60%;
+            flex: 0.7 1 60%;
   }
 }
 @media only screen and (max-device-width: 1024px) {
