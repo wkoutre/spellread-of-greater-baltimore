@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Logo from '../css/images/spell-read-logo.png';
 import { footerDisplayOff } from './helpers'
 
-let titles = ['Home', 'What is Dyslexia?', 'Why SpellRead Works', 'Research & Media', 'Success Stories', 'Parent Resources', 'Contact'];
+let titles = ['Home', 'What is Dyslexia?', 'Why SpellRead Works', 'Research & Media', 'Success Stories', 'Parent Resources', 'Contact Us'];
 
 let links = ["", "dyslexia-facts", "why-spellread-works", "research-and-media", "success-stories", "parent-resources", "contact"];
 
