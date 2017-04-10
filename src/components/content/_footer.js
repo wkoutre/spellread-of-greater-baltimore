@@ -11,7 +11,9 @@ export const address = <MyLink id="address" link="https://goo.gl/BFDe74" text={<
 export const email = <span>Email:&nbsp;<MyLink link="mailto:jcollinsspellread@gmail.com" text="jcollinsspellread@gmail.com"/></span>
 export const office = <span>Office:&nbsp;<MyLink link="tel:+1-410-465-0280" text="410.465.0280"/></span>
 export const fax = <span>Fax:&nbsp;<MyLink link="fax:+1-410-465-0280" text="410.465.0280"/></span>
-export const copyright = "Copyright © 2017"
+export const copyright = <span>Copyright © 2017<br/><br/>
+													<MyLink text="Nick Koutrelakos" link="https://github.com/wkoutre"/>
+												</span>
 
 export const logo = <img src={Logo} alt={"SpellRead logo"}/> 
 

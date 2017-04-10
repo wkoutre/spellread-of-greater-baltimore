@@ -5,7 +5,6 @@
 	.resources
 		height 97%
 		{$flex-row-wrap}
-		align-items flex-starta
 		& blockquote
 			flex 0 1 90%
 			// align-self flex-start
@@ -81,10 +80,14 @@
 				{$link-style}
 		
 	.what-we-know
-		& p
-			overflow-y auto
+		& > div
 			{$flex-row-wrap}
-			justify-content center
-			text-align justify
-			& > span
-				flex 0 1 95%
+			align-items center
+			& > p
+				overflow-y auto
+				{$flex-row-wrap}
+				justify-content center
+				text-align justify
+				align-items center
+				& > span
+					flex 0 1 95%

@@ -6,4 +6,8 @@ const MyLink = (props) => {
 	)
 }
 
+MyLink.propTypes = {
+	link: React.PropTypes.string.isRequired,
+}
+
 export default  MyLink;
