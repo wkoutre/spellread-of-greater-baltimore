@@ -2,6 +2,8 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { BrowserRouter, Route } from 'react-router-dom';
+// Firebase
+import * as firebase from 'firebase'
 // styles
 import './css/style.css';
 // Components
@@ -17,6 +19,15 @@ import ParentResources from './components/ParentResources';
 import Contact from './components/Contact';
 import DyslexiaFacts from './components/DyslexiaFacts';
 
+ let config = {
+    apiKey: "AIzaSyATCj9PgrozINdOPK6ThC7qJn2vt6C9KeY",
+    authDomain: "spellread-6d601.firebaseapp.com",
+    databaseURL: "https://spellread-6d601.firebaseio.com",
+    projectId: "spellread-6d601",
+    storageBucket: "spellread-6d601.appspot.com",
+    messagingSenderId: "737105076515"
+  };
+  
 const componentFinder = (page='home') => {
 	
 	switch(page) {

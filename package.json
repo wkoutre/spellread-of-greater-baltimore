@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "autoprefixer-stylus": "^0.13.0",
+    "firebase": "^3.7.5",
     "history": "^4.6.1",
     "lodash": "^4.17.4",
     "re-base": "^2.6.0",
