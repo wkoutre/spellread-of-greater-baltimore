@@ -18,91 +18,52 @@ import SuccessStories from './components/SuccessStories';
 import ParentResources from './components/ParentResources';
 import Contact from './components/Contact';
 import DyslexiaFacts from './components/DyslexiaFacts';
-
- let config = {
-    apiKey: "AIzaSyATCj9PgrozINdOPK6ThC7qJn2vt6C9KeY",
-    authDomain: "spellread-6d601.firebaseapp.com",
-    databaseURL: "https://spellread-6d601.firebaseio.com",
-    projectId: "spellread-6d601",
-    storageBucket: "spellread-6d601.appspot.com",
-    messagingSenderId: "737105076515"
-  };
-  
-const componentFinder = (page='home') => {
-	
-	switch(page) {
-		case('home'):
-			return Landing;
-		case('dyslexia-facts'):
-			return DyslexiaFacts
-		case ('why-spellread-works'):
-			return WhySpellReadWorks;
-		case('research-and-media'):
-			return Research;
-		case('success-stories'):
-			return SuccessStories;
-		case('parent-resources'):
-			return ParentResources;
-		case('contact'):
-			return Contact;
-		default:
-			return NotFound;
-	}
-}
-
-const PathRendered = (props) => {
-	
-	const pageName = props.match.params.pageName;
-	const Comp = componentFinder(pageName);
-	
-	return (
-			<Comp />
-	)
-}
+let defaultDatabase, defaultApp;
 
 class Root extends React.Component {
 
-	// toggleHeaderDisplay = () => {
-	// 	const navLinks = document.getElementById("nav-ul").children;
+	componentWillMount() {
+		 const config = {
+		    apiKey: "AIzaSyATCj9PgrozINdOPK6ThC7qJn2vt6C9KeY",
+		    authDomain: "spellread-6d601.firebaseapp.com",
+		    databaseURL: "https://spellread-6d601.firebaseio.com",
+		    projectId: "spellread-6d601",
+		    storageBucket: "spellread-6d601.appspot.com",
+		    messagingSenderId: "737105076515"
+		  };
 
-	// 	for (let i = 1; i < navLinks.length; i++){
-	// 		navLinks[i].style.display = navLinks[i].style.display === 'none' ? 'flex' : 'none';
-	// 	}
-	// }
+		  defaultApp = firebase.initializeApp(config);
+		  defaultDatabase = firebase.database();
+		  console.log(defaultDatabase);
+	}
 
-	// mobileCheck = () => {
-	// 	console.log('bro, changing orientation!');
-	// 	const showChildren = () => {
-	// 		const navUl = document.getElementById("nav-ul");
-	// 		const height = document.getElementById("nav-ul").style.height;
-	// 		const navLinks = document.getElementById("nav-ul").children;
-
-	// 		if (navLinks[1].style.display === 'none')
-	// 			setTimeout(this.toggleHeaderDisplay, 300);
-	// 		else
-	// 			this.toggleHeaderDisplay();
-
-	// 		 if (height !== '75vh')
-	// 			navUl.style.height = '75vh';
-	// 		 else
-	// 			navUl.style.height = '3.5vh';
-	// 		// console.log('classList', navUl.classList);
-	// 	}
+	PathRendered = (props) => {
+		const pageName = props.match.params.pageName;
+		const Comp = this.componentFinder(pageName);
 		
-	// 	const navLinks = document.getElementById("nav-ul").children;
-	// 	const width = screen.width;
+		return <Comp />
+	}
 
-	// 	if (width < 1025) {
-	// 		// give all nav links hide/show capabilities on click
-	// 		for (let i = 0; i < navLinks.length; i++) {
-	// 			navLinks[i].addEventListener('click', () => showChildren());
-	// 			// hide all children but the MENU 
-	// 			if (i > 0) {
-	// 				navLinks[i].style.display = 'none';
-	// 			}
-	// 		}
-	// 	}
-	// }
+	componentFinder = (page='home') => {
+		switch(page) {
+			case('home'):
+				return Landing;
+			case('dyslexia-facts'):
+				return DyslexiaFacts
+			case ('why-spellread-works'):
+				return WhySpellReadWorks;
+			case('research-and-media'):
+				return Research;
+			case('success-stories'):
+				return SuccessStories;
+			case('parent-resources'):
+				return ParentResources;
+			case('contact'):
+				return Contact;
+			default:
+				return NotFound;
+		}
+	}
 
 	toggleFullScreen = () => {
 		  var doc = window.document;
@@ -126,7 +87,7 @@ class Root extends React.Component {
 			<BrowserRouter>
 				<div>
 					<Header />
-					<Route path="/:pageName?" render={PathRendered}/>
+					<Route path="/:pageName?" render={this.PathRendered}/>
 					<Footer />
 				</div>
 			</BrowserRouter>

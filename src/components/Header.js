@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../css/images/spell-read-logo.png';
-import { footerDisplayOff, headerDisplayOff } from './helpers'
+import { footerDisplayOff } from './helpers'
 
 let titles = ['Home', 'What is Dyslexia?', 'Why SpellRead Works', 'Research & Media', 'Success Stories', 'Parent Resources', 'Contact'];
 

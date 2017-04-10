@@ -35,13 +35,15 @@
 				// border 1px solid white
 			& > input,
 			& > textarea
-				flex 0.5 1 60%
+				flex 0 1 60%
 				background-color $light-purple
 				border none
 				border-radius 5px
 				padding 3px
 				font-size 0.6em
-				// text-align center
+				outline none
+				&:focus
+					background-color $white
 				
 		& > button
 			{$button-style}

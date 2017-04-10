@@ -14,11 +14,25 @@ class Contact extends React.Component {
 	}
 
 	handleChange = (e) => {
-		console.log(e.target);
+		e.preventDefault();
 
 		this.setState({
 			[e.target.name]: e.target.value
 		})
+	}
+
+	handleSubmit = () => {
+		const submission = {...this.state};
+
+		this.setState({
+			firstName: "",
+			lastName: "",
+			email: "",
+			comments: ""
+		});
+
+		console.log(submission);
+		return false;
 	}
 
 	render() {
@@ -46,25 +60,29 @@ class Contact extends React.Component {
 					<form
 						className="contact-form"
 						autoComplete="on"
-						action="">
+						// action=""
+						target="_blank"
+						onSubmit={this.handleSubmit}>
 						<div><span>*First Name:</span> <input
 							required
 							type="text"
 							name="firstName"
 							autoComplete="on"
 							onChange={(e) => this.handleChange(e)}
-							value={this.state.name}
+							value={this.state.firstName}
 							placeholder="*First name"/></div>
 						<div><span>*Last Name:</span> <input required
 							type="text"
 							name="lastName"
 							onChange={(e) => this.handleChange(e)}
+							value={this.state.lastName}
 							autoComplete="on"
 							placeholder="*Last name"/></div>
 						<div><span>*Email: </span><input 
 							required 
 							type="email" 
 							name="email"
+							value={this.state.email}
 							onChange={(e) => this.handleChange(e)}
 							autoComplete="on" 
 							placeholder="*Email address"/></div>
@@ -73,6 +91,7 @@ class Contact extends React.Component {
 							name="comments"
 							onChange={(e) => this.handleChange(e)}
 							id="" 
+							value={this.state.comments}
 							cols="30" 
 							rows="10" 
 							maxLength="500"

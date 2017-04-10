@@ -896,14 +896,19 @@
   }
   .contact-form > div > input,
   .contact-form > div > textarea {
-    -webkit-box-flex: 0.5;
-        -ms-flex: 0.5 1 60%;
-            flex: 0.5 1 60%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 60%;
+            flex: 0 1 60%;
     background-color: #dedcea;
     border: none;
     border-radius: 5px;
     padding: 3px;
     font-size: 0.6em;
+    outline: none;
+  }
+  .contact-form > div > input:focus,
+  .contact-form > div > textarea:focus {
+    background-color: #f7f6f2;
   }
   .contact-form > button {
     height: auto;
