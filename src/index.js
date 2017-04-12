@@ -1,9 +1,10 @@
 // React tooling
 import React from 'react';
+import PropTypes from 'prop-types';
 import { render } from 'react-dom';
 import { BrowserRouter, Route } from 'react-router-dom';
 // Firebase
-import * as firebase from 'firebase'
+// import * as firebase from 'firebase'
 // styles
 import './css/style.css';
 // Components
@@ -18,24 +19,25 @@ import SuccessStories from './components/SuccessStories';
 import ParentResources from './components/ParentResources';
 import Contact from './components/Contact';
 import DyslexiaFacts from './components/DyslexiaFacts';
-let defaultDatabase, defaultApp;
+// let defaultDatabase, defaultApp;
+let windowSize = window.innerWidth;
 
 class Root extends React.Component {
 
-	componentWillMount() {
-		 const config = {
-		    apiKey: "AIzaSyATCj9PgrozINdOPK6ThC7qJn2vt6C9KeY",
-		    authDomain: "spellread-6d601.firebaseapp.com",
-		    databaseURL: "https://spellread-6d601.firebaseio.com",
-		    projectId: "spellread-6d601",
-		    storageBucket: "spellread-6d601.appspot.com",
-		    messagingSenderId: "737105076515"
-		  };
+	// componentWillMount() {
+	// 	 const config = {
+	// 	    apiKey: "AIzaSyATCj9PgrozINdOPK6ThC7qJn2vt6C9KeY",
+	// 	    authDomain: "spellread-6d601.firebaseapp.com",
+	// 	    databaseURL: "https://spellread-6d601.firebaseio.com",
+	// 	    projectId: "spellread-6d601",
+	// 	    storageBucket: "spellread-6d601.appspot.com",
+	// 	    messagingSenderId: "737105076515"
+	// 	  };
 
-		  defaultApp = firebase.initializeApp(config);
-		  defaultDatabase = firebase.database();
-		  console.log(defaultDatabase);
-	}
+	// 	  defaultApp = firebase.initializeApp(config);
+	// 	  defaultDatabase = firebase.database();
+	// 	  console.log(defaultDatabase);
+	// }
 
 	PathRendered = (props) => {
 		const pageName = props.match.params.pageName;
@@ -82,6 +84,14 @@ class Root extends React.Component {
 
 	render() {
     		document.addEventListener("touchstart", function(){}, true);
+    		window.addEventListener("resize", () => {
+    			const prevWidth = windowSize;
+    			let smallToBig = prevWidth < 1367 && window.innerWidth >= 1367;
+    			let bigToSmall = prevWidth >= 1367 && window.innerWidth < 1367
+    			if (smallToBig || bigToSmall){
+    				window.location.reload(false);
+    			}
+    		})
 
 		return (
 			<BrowserRouter>
@@ -96,15 +106,15 @@ class Root extends React.Component {
 }
 
 Landing.contextTypes = {
-	router: React.PropTypes.object
+	router: PropTypes.object
 }
 
 NotFound.contextTypes = {
-	router: React.PropTypes.object
+	router: PropTypes.object
 }
 
 Header.contextTypes = {
-	router: React.PropTypes.object
+	router: PropTypes.object
 }
 
 render(<Root />, document.querySelector('#root'))

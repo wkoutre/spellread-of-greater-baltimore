@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const MyLink = (props) => {
 	return(
@@ -7,7 +8,7 @@ const MyLink = (props) => {
 }
 
 MyLink.propTypes = {
-	link: React.PropTypes.string.isRequired,
+	link: PropTypes.string.isRequired,
 }
 
 export default  MyLink;
