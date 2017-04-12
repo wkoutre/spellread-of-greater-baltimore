@@ -7,7 +7,8 @@ let titles = ['Home', 'What is Dyslexia?', 'Why SpellRead Works', 'Research & Me
 
 let links = ["", "dyslexia-facts", "why-spellread-works", "research-and-media", "success-stories", "parent-resources", "contact"];
 
-const isMobile = navigator.userAgent.search(/mobile/i) > -1;
+// const isMobile = navigator.userAgent.search(/mobile/i) > -1;
+const isMobile = window.innerWidth < 1367;
 
 if (isMobile) {
 	titles = ['MENU', ...titles]

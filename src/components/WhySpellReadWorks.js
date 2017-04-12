@@ -5,8 +5,8 @@ import CSSTransitionGroup from 'react-addons-css-transition-group';
 // import Footer from './Footer';
 import {headerArray, dataArray, buttonArray } from './content/_why_spellread_works_content';
 
-const isMobile = navigator.userAgent.search(/mobile/i) > -1;
-
+// const isMobile = navigator.userAgent.search(/mobile/i) > -1;
+const isMobile = window.innerWidth < 1367;
 
 class WhySpellReadWorks extends React.Component {
   constructor() {

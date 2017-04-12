@@ -2,7 +2,8 @@ import React from 'react';
 import MyLink from './MyLink';
 import { facebook, linkedin, sections, address, office, fax, copyright, linkInfo } from './content/_footer';
 import { headerDisplayOff } from './helpers'
-const isMobile = navigator.userAgent.search(/mobile/i) > -1
+// const isMobile = navigator.userAgent.search(/mobile/i) > -1;
+const isMobile = window.innerWidth < 1367;
 
 class Footer extends React.Component {
 
