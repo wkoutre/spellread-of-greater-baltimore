@@ -1,3 +1,6 @@
+// Import Cormorant font from Google Font API
+@import url('https://fonts.googleapis.com/css?family=Cormorant|Lora');
+
 $content = Cormorant
 $heading = Lora
 $white = #f7f6f2
@@ -11,21 +14,10 @@ $dark-purple = #28276D
 $light-purple = #DEDCEA
 $yellow-opacity = rgba(247, 195, 49, 0.5)
 
-@import url('https://fonts.googleapis.com/css?family=Cormorant|Lora');
 
 // Import all partials
 @require './_variables.styl'
 @require './_*.styl'
-// Import Cormorant font from Google Font API
-
-flex-row-center =
-	display flex
-	justify-content center
-	
-flex-row-all-center =
-	display flex
-	justify-content center
-	align-items center
 
 *
 	margin 0
@@ -39,6 +31,7 @@ flex-row-all-center =
 	
 html
 	font-size 2vmin
+	-webkit-tap-highlight-color rgba(0,0,0,0)
 
 h1
 	{$heading-style}
@@ -73,6 +66,7 @@ ul
 blockquote
 	color $light-purple
 	font-style italic
+	font-family $content
 	
 button
 	flex 0 1 50%
