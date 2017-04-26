@@ -10,7 +10,7 @@ export const sections = ['Social Media', 'Contact', 'Address', ''];
 export const address = <a id="address" href="https://goo.gl/BFDe74"> <span>3454 Ellicott Center Dr.,<br/> Suite 203</span></a>;
 export const email = <span>Email:&nbsp;<MyLink link="mailto:jcollinsspellread@gmail.com" text="jcollinsspellread@gmail.com"/></span>
 export const office = <span>Office:&nbsp;<a href="tel:+1-410-465-0280">410.465.0280</a></span>
-export const fax = <span>Fax:&nbsp;<MyLink link="fax:+1-410-465-0280" text="410.465.0280"/></span>
+export const fax = <span>Fax:&nbsp;<a href="fax:+1-410-465-0280">410.465.0280</a></span>
 export const copyright = <span>Copyright © 2017<br/><br/>
 													<MyLink text="Nick Koutrelakos" link="https://github.com/wkoutre"/>
 												</span>
