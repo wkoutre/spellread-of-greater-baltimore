@@ -1,40 +1,42 @@
 {
-  "name": "spellread-final",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": "https://spellread-of-greater-baltimore.herokuapp.com",
-  "dependencies": {
-    "autoprefixer-stylus": "^0.13.0",
-    "firebase": "^3.7.5",
-    "history": "^4.6.1",
-    "lodash": "^4.17.4",
-    "prop-types": "^15.5.7",
-    "re-base": "^2.6.0",
-    "react": "^15.4.2",
-    "react-addons-css-transition-group": "^15.4.2",
-    "react-dom": "^15.4.2"
-  },
-  "devDependencies": {
-    "babel-eslint": "^7.2.0",
-    "concurrently": "^3.4.0",
-    "eslint": "^3.18.0",
-    "eslint-plugin-flowtype": "^2.30.4",
-    "eslint-plugin-jsx-a11y": "^4.0.0",
-    "eslint-plugin-react": "^6.10.3",
-    "react-router": "^4.0.0-alpha.4",
-    "react-router-dom": "^4.0.0",
-    "react-scripts": "0.9.5",
-    "stylus": "^0.54.5"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "styles": "stylus -u autoprefixer-stylus ./src/css/style.styl -o ./src/css/style.css",
-    "styles:watch": "stylus -u autoprefixer-stylus -w ./src/css/style.styl -o ./src/css/style.css"
-  },
-  "eslintConfig": {
-    "extends": "./node_modules/react-scripts/.eslintrc"
-  }
+	"name": "spellread-final",
+	"version": "0.1.0",
+	"private": true,
+	"homepage": "https://spellread-of-greater-baltimore.herokuapp.com",
+	"dependencies": {
+		"autoprefixer-stylus": "^0.13.0",
+		"firebase": "^3.7.5",
+		"history": "^4.6.1",
+		"lodash": "^4.17.4",
+		"prop-types": "^15.5.7",
+		"re-base": "^2.6.0",
+		"react": "^15.4.2",
+		"react-addons-css-transition-group": "^15.4.2",
+		"react-dom": "^15.4.2",
+		"serve": "^5.1.5"
+	},
+	"devDependencies": {
+		"babel-eslint": "^7.2.0",
+		"concurrently": "^3.4.0",
+		"eslint": "^3.18.0",
+		"eslint-plugin-flowtype": "^2.30.4",
+		"eslint-plugin-jsx-a11y": "^4.0.0",
+		"eslint-plugin-react": "^6.10.3",
+		"react-router": "^4.0.0-alpha.4",
+		"react-router-dom": "^4.0.0",
+		"react-scripts": "0.9.5",
+		"stylus": "^0.54.5"
+	},
+	"scripts": {
+		"start": "serve -s build",
+		"local_start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test --env=jsdom",
+		"eject": "react-scripts eject",
+		"styles": "stylus -u autoprefixer-stylus ./src/css/style.styl -o ./src/css/style.css",
+		"styles:watch": "stylus -u autoprefixer-stylus -w ./src/css/style.styl -o ./src/css/style.css"
+	},
+	"eslintConfig": {
+		"extends": "./node_modules/react-scripts/.eslintrc"
+	}
 }
