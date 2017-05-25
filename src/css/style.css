@@ -5217,7 +5217,6 @@
   }
   .nav-links a,
   .footer-section a {
-    tap-highlight-color: rgba(0,0,0,0);
     text-decoration: none;
     font-family: Cormorant;
     color: #dcc7aa;
@@ -5433,7 +5432,6 @@
             justify-content: center;
   }
   #nav-ul > li:not(#menu) > a {
-    tap-highlight-color: rgba(0,0,0,0);
     font-family: Cormorant;
     text-decoration: none;
     -webkit-box-flex: 0;
@@ -7121,6 +7119,7 @@
 }
 html {
   font-size: 2vmin;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 h1 {
   color: #fff;
@@ -7160,6 +7159,7 @@ ul {
 blockquote {
   color: #dedcea;
   font-style: italic;
+  font-family: Cormorant;
 }
 button {
   -webkit-box-flex: 0;
