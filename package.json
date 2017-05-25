@@ -2,6 +2,7 @@
   "name": "spellread-final",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://spellread-of-greater-baltimore.herokuapp.com",
   "dependencies": {
     "autoprefixer-stylus": "^0.13.0",
     "firebase": "^3.7.5",
