@@ -28,7 +28,7 @@
 		"stylus": "^0.54.5"
 	},
 	"scripts": {
-		"start": "serve -s ./build",
+		"start": "serve -s ./app/build",
 		"local_start": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test --env=jsdom",
