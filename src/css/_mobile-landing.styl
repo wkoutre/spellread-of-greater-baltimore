@@ -8,8 +8,8 @@
 		{$flex-row-wrap}
 		justify-content center
 		font-size 3.5rem
-		align-items space-around
-		align-self flex-start
+		// align-items space-around
+		align-self center
 		& > blockquote
 			font-size 0.9em
 			flex 0 1 95%
@@ -27,14 +27,14 @@
 					{$link-style}
 					color $light-yellow
 					border-bottom 1px dashed $light-purple
-					
 		& > a
 			flex 0 1 auto
-			text-decoration none
+			text-decoration underline
+			color $light-purple
 			{$flex-row}
 			justify-content center
-			align-self flex-end
 			& > span
 				{$link-style}
+				border none !important
 				flex 0 1 10%
 				color $light-purple

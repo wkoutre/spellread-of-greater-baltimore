@@ -21,7 +21,7 @@ class WhySpellReadWorks extends React.Component {
     let slides = [];
     let show;
     for (let i = 0; i < 6; i++){
-    	if (!isMobile)
+    	if (!isMobile && !sessionStorage['sr-slides-complete'])
     		 show = i === 0 ? "why-sr-works-content show" : "why-sr-works-content hide";
     	else
     		show = "why-sr-works-content show";
@@ -46,14 +46,23 @@ class WhySpellReadWorks extends React.Component {
     this.setState({
       totalSlides: slides
     })
+
+    if (sessionStorage['sr-slides-complete']) {
+    	this.setState({ current: 6 })
+    }
   }
 
   contentHandler = () => {
     /* update this with PNGs... or learn how to use SVG */
     const localCurrent = this.state.current + 1;
     let element = document.getElementById(`why-sr-works-${this.state.current}`);
+
     element.classList.remove("hide");
     element.classList.add("show");
+
+    if (localCurrent === this.state.totalSlides.length) {
+    	sessionStorage['sr-slides-complete'] = true;
+    }
 
     this.setState({
           current: localCurrent
