@@ -1,4 +1,6 @@
-## A single page website written using React and Facebook Incubator's [create-react-app](https://github.com/facebookincubator/create-react-app)
+# SpellRead of Greater Baltimore
+
+A single page website written using React and Facebook Incubator's [create-react-app](https://github.com/facebookincubator/create-react-app)
 
 ### RUN 
 
